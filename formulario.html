@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio web</title>
+    <!-- Vincular CSS propio -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<form>
- 
-        
+    <!-- Contenedor principal -->
+    <div>
+
+        <header>
+            <h1>Titulo principal</h1>
+            <h2>Sub titulo</h2>
+            <h3>Titulo secundario</h3>
+        </header>
+        <!-- Navegación principal -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="referenciasyfilosofia.html">Filosofia</a></li>
+                <li><a href="estiloartistico.html">Estilo Artistico</a></li>
+                <li><a href="trabajoshechos.html">Obras</a>
+                    <!-- Submenú -->
+                    <ul>
+                        <li><a href="colaboracionesatim.html">Colaboraciones</a></li>
+                        <li><a href="fragmentosdesusobras.html">Algunos Films</a></li>
+                    </ul>
+                </li>
+                <li><a href="opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
+                <li><a href="alumnos.html">Contacto</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <div class="border-b border-white/10 pb-12">
       <h2 class="text-base/7 font-semibold text-white">Informacion personal</h2>
@@ -63,6 +89,15 @@
     <button type="button" class="text-sm/6 font-semibold text-white">Cancelar</button>
     <button type="submit" class="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Guardar y enviar</button>
   </div>
-</form>
+
+
+        <!-- Pie de página -->
+        <footer>
+            <address>
+                <p> 2025 Mi sitio web. Todos los derechos reservados. </p>
+            </address>
+        </footer>
+    
+    </div>
 </body>
 </html>
