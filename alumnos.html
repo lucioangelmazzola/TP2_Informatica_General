@@ -24,28 +24,25 @@
         
         <!-- Navegación principal -->
         
-        <nav >
-        
-            <ul>
-        
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="referenciasyfilosofia.html">Filosofia</a></li>
-                <li><a href="estiloartistico.html">Estilo Artistico</a></li>
-                <li><a href="trabajoshechos.html">Obras</a>
-        
-                    <!-- Submenú -->
-                    <ul>
-                        <li><a href="colaboracionesatim.html">Colaboraciones</a></li>
-                        <li><a href="fragmentosdesusobras.html">Algunos Films</a></li>
-                    </ul>
-        
-                </li>
-                <li><a href="opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
-                <li><a href="alumnos.html">Contacto</a></li>
-                <li><a href="formulario.html">Formulario</a></li>
-        
-            </ul>
-        
+        <nav class="order-0 flex justify-center bg-black text-white">
+                
+                <ul class="flex flex-row p-10 m-2">
+                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="index.html">Inicio</a></li>
+                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="referenciasyfilosofia.html">Filosofia</a></li>
+                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="estiloartistico.html">Estilo Artistico</a></li>
+                    <li>
+                        <a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="trabajoshechos/index.html">Obras</a>
+                        <!-- Submenú -->
+                        <ul class="absolute hidden group-hover:block bg-black text-white mt-1 rounded shadow-lg">
+                            <li><a class="block px-4 py-2 hover:bg-orange-300 hover:text-black" href="trabajoshechos/colaboracionesatim.html">Colaboraciones</a></li>
+                            <li><a class="block px-4 py-2 hover:bg-orange-300 hover:text-black" href="trabajoshechos/fragmentosdesusobras.html">Algunos Films</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
+                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="alumnos.html">Contacto</a></li>
+                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="formulario.html">Formulario</a></li>
+                </ul>
+
         </nav>
 
          <!-- Contenido principal -->

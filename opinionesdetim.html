@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criticas y opiniones sobre Tim Burton</title>
     <!-- Vincular CSS propio -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body class="p-0">
+
     <!-- Contenedor principal -->
+
     <div class="flex flex-col box-sizing bg-[#535355]">
 
         <header class="order-1 p-10">
@@ -24,33 +29,36 @@
         <!-- Navegación principal -->
         
         <nav class="order-0 flex justify-center bg-black text-white">
-            
-            <ul>
-
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="referenciasyfilosofia.html">Filosofia</a></li>
-                <li><a href="estiloartistico.html">Estilo Artistico</a></li>
-                <li><a href="trabajoshechos/index.html">Obras</a>
-                    <!-- Submenú -->
-                    <ul>
-                        <li><a href="trabajoshechos/colaboracionesatim.html">Colaboraciones</a></li>
-                        <li><a href="trabajoshechos/fragmentosdesusobras.html">Algunos Films</a></li>
-                    </ul>
-                </li>
-                <li><a href="opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
-                <li><a href="alumnos.html">Contacto</a></li>
-                <li><a href="formulario.html">Formulario</a></li>
-
-            </ul>
+                
+            <ul class="flex flex-row p-10 m-2">
         
+                <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="index.html">Inicio</a></li>
+                <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="referenciasyfilosofia.html">Filosofia</a></li>
+                <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="estiloartistico.html">Estilo Artistico</a></li>
+                <li>
+                    <a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="trabajoshechos/index.html">Obras</a>
+                    <!-- Submenú -->
+
+                    <ul class="absolute hidden group-hover:block bg-black text-white mt-1 rounded shadow-lg">
+                        <li><a class="block px-4 py-2 hover:bg-orange-300 hover:text-black" href="trabajoshechos/colaboracionesatim.html">Colaboraciones</a></li>
+                        <li><a class="block px-4 py-2 hover:bg-orange-300 hover:text-black" href="trabajoshechos/fragmentosdesusobras.html">Algunos Films</a></li>
+                    </ul>
+
+                </li>
+                <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
+                <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="alumnos.html">Contacto</a></li>
+                <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="formulario.html">Formulario</a></li>
+        
+            </ul>
+
         </nav>
 
         <!-- Contenido principal -->
         
         <main class="text-white order-2">
             
-            <section>                    
-                    
+            <section class="flex flex-col p-10 items-baseline">                    
+
                 <h3> Carlos Boyero (crítico de cine, El País) </h3>
 
                 <p> Sobre la película Beetlejuice, Beetlejuice: <br>
@@ -59,11 +67,11 @@
                         preciosa y ‘Eduardo Manostijeras’ tiene una compasión y piedad maravillosas, aunque otras 
                         suyas no me gustan.”
                 </p>
-
                 <p>
                     Aquí Boyero reconoce lo valioso de Burton en sus mejores momentos, pero también expresa que 
                     no está convencido de su producción más reciente.
                 </p>
+
 
                 <h3>  Sergi Sánchez (crítico de La Razón) </h3>
 
@@ -74,11 +82,11 @@
                     sus esencias sea demasiado ensimismada. Es decir, que su futuro como cineasta dependa en exceso de 
                     su fondo de armario, y que sea incapaz de innovar en nuevas colecciones.”
                 </p>
-
                 <p>
                     Esta crítica se valora su regreso a su estilo más genuino, pero se advierte que podría estar demasiado atrapado 
                     en su mejor “época” sin crear algo nuevo.
                 </p>
+
 
                 <h3> El medio Periodista Digital (agencia EFE) </h3>
 
@@ -96,6 +104,7 @@
         </main>
 
         <!-- Pie de página -->
+         
         <footer class="order-3 bg-black text-white p-10">
 
             <address>
