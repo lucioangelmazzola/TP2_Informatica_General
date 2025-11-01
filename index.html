@@ -3,58 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi sitio web</title>
+    <title> Introducción: Tim Burton </title>
     <!-- Vincular CSS propio -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Contenedor principal -->
-    <div>
+    <div class="flex flex-col box-sizing">
 
-        <header>
-            <h1>Titulo principal</h1>
-            <h2>Sub titulo</h2>
-            <h3>Titulo secundario</h3>
-        </header>
-        <!-- Navegación principal -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="referenciasyfilosofia.html">Filosofia</a></li>
-                <li><a href="estiloartistico.html">Estilo Artistico</a></li>
-                <li><a href="trabajoshechos/index.html">Obras</a>
-                    <!-- Submenú -->
-                    <ul>
-                        <li><a href="trabajoshechos/colaboracionesatim.html">Colaboraciones</a></li>
-                        <li><a href="trabajoshechos/fragmentosdesusobras.html">Algunos Films</a></li>
-                    </ul>
-                </li>
-                <li><a href="opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
-                <li><a href="alumnos.html">Contacto</a></li>
-                <li><a href="formulario.html">Formulario</a></li>
-            </ul>
-        </nav>
+            <header class="order-1">
+                <h1> TIM BURTON </h1>
+                
+                <h2>¿Quién es Tim Burton?</h2>
+                
+                <p>
+                    Timothy Walter Burton nació el 25 de agosto de 1958 en Burbank, California, Estados Unidos.
+                    Desde muy chico mostró inclinaciones hacia lo artístico: dibujaba, coleccionaba películas clásicas de horror 
+                    y fantasía ademas muchas veces se sentía un poco fuera de lugar respecto de su entorno suburbano. 
+                    Sus películas favoritas desde la infancia fueron aquellas con atmósferas oscuras, 
+                    excéntricas o fantásticas, así como los filmes de monstruos clásicos.
+                </p>
+            </header>
 
-    <!-- Contenido principal -->
-    <main>
-        <section id="texto">
-            <h1>TIM BURTON</h1>
-            <h2>¿Quien era y quien es Tim?</h2>
-            <p>Timothy Walter Burton nació el 25 de agosto de 1958 en Burbank, California, Estados Unidos. <br>
-                Desde muy chico mostró inclinaciones hacia lo artístico: dibujaba, coleccionaba películas clásicas de horror y fantasía, y muchas veces se sentía un poco fuera de lugar respecto de su entorno suburbano. <br>Sus películas favoritas desde la infancia fueron aquellas con atmósferas oscuras, excéntricas o fantásticas, así como los filmes de monstruos clásicos. <br></p>
-        </section>
+            <!-- Navegación principal -->
+            
+            <nav class="order-0 flex bg-black text-white">
+                <ul class="flex flex-row p-10">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="referenciasyfilosofia.html">Filosofia</a></li>
+                    <li><a href="estiloartistico.html">Estilo Artistico</a></li>
+                    <li><a href="trabajoshechos/index.html">Obras</a>
+                        <!-- Submenú -->
+                        <ul>
+                            <li><a href="trabajoshechos/colaboracionesatim.html">Colaboraciones</a></li>
+                            <li><a href="trabajoshechos/fragmentosdesusobras.html">Algunos Films</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
+                    <li><a href="alumnos.html">Contacto</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                </ul>
+            </nav>
 
-        <section id="imagenes">
-            <h2>Galería o imágenes</h2>
-            <img src="ruta-de-tu-imagen.jpg" alt="Descripción de la imagen">
-        </section>
-    </main>
+        <!-- Contenido principal -->
+        
+        <main class="order-2">
+            
+            <section>
+                <h2> Breve historia de vida </h2>
+                
+                <p> En su juventud, Burton ingresó al California Institute of the Arts (CalArts), donde se especializó en animación en 
+                    el programa de Character Animation. Durante esos años comenzó a producir cortometrajes (como Vincent en 1982) que 
+                    ya contenían muchos de los rasgos que luego definirían su obra. Tras sus estudios, Burton trabajó como animador 
+                    para Disney, pero pronto su estilo poco convencional chocó con la ortodoxia del estudio. </p>
+
+                <p>
+                    Su salto al cine comercial fue con Pee-wee 's Big Adventure (1985), una comedia con tintes surrealistas que le abrió 
+                    puertas en Hollywood. A lo largo de su carrera, ha explorado géneros diversos: fantasía, horror, ciencia ficción, 
+                    biográficos, musicales, cine animado y live action, siempre con su sello estético particular. Ha recibido numerosos 
+                    reconocimientos, como el León de Oro en el Festival de Venecia (2007) por su carrera, y la Orden de las Artes y 
+                    Letras en Francia (2010).</p>
+            </section>
+
+            <section id="imagenes">
+                <h2>Galería o imágenes</h2>
+                <img src="ruta-de-tu-imagen.jpg" alt="Descripción de la imagen">
+            </section>
+        
+        </main>
 
         <!-- Pie de página -->
-        <footer>
+        
+        <footer class="order-3 bg-black text-white p-10">
+        
             <address>
+        
                 <p> 2025 Mi sitio web. Todos los derechos reservados. </p>
+        
             </address>
+        
         </footer>
     
     </div>
