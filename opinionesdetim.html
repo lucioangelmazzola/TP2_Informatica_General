@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi sitio web</title>
+    <title>Criticas y opiniones sobre Tim Burton</title>
     <!-- Vincular CSS propio -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="p-0">
     <!-- Contenedor principal -->
-    <div>
+    <div class="flex flex-col box-sizing bg-[#535355]">
 
-        <header>
-            <h1>Titulo principal</h1>
-            <h2>Sub titulo</h2>
-            <h3>Titulo secundario</h3>
+        <header class="order-1 p-10">
+            
+            <h2>Opiniones sobre Tim Burton</h2>
+                
+            <p> Tim Burton no es solo un cineasta: es un creador visual que expresa con imágenes, formas y atmósferas.
+            A lo largo de su obra se revelan varias referencias, influencias y motivaciones constantes. </p>
+        
         </header>
+        
         <!-- Navegación principal -->
-        <nav>
+        
+        <nav class="order-0 flex justify-center bg-black text-white">
+            
             <ul>
+
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="referenciasyfilosofia.html">Filosofia</a></li>
                 <li><a href="estiloartistico.html">Estilo Artistico</a></li>
@@ -32,49 +40,70 @@
                 <li><a href="opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
                 <li><a href="alumnos.html">Contacto</a></li>
                 <li><a href="formulario.html">Formulario</a></li>
+
             </ul>
+        
         </nav>
 
-    <!-- Contenido principal -->
-    <main>
-        <section id="texto">
-            <h1>TIM BURTON</h1>
-            <h2>Opiniones sobre Tim</h2>
-            <p> Tim Burton no es solo un cineasta: es un creador visual que expresa con imágenes, formas y atmósferas.
-                A lo largo de su obra se revelan varias referencias, influencias y motivaciones constantes: </p>
-                <ul>
-            <h3>Carlos Boyero (crítico de cine, El País)</h3>
-            <p> sobre la película Bitelchús, Bitelchús:<br>
- “Para mí Tim Burton ha hecho dos obras maestras. Tiene una personalidad muy definida, pero yo le tenía cierta manía<br>
-  porque era como el icono de los modernos… ‘Ed Wood’ era preciosa y ‘Eduardo Manostijeras’ tiene una compasión y piedad <br>
-  maravillosas, aunque otras suyas no me gustan.”<br>
- Aquí Boyero reconoce lo valioso de Burton en sus mejores momentos, pero también expresa que no está convencido de su<br>
-  producción más reciente.
-</p></il>
-  <il><p>Sergi Sánchez (crítico de La Razón) <br>
-    sobre “Bitelchús, Bitelchús”:
- “El auto homenaje … amplía su campo de batalla … La poética de Burton siempre funciona mejor en la anécdota que en<br>
-  la continuidad … Lo único que nos hace dudar es que esta súbita revitalización de sus esencias sea demasiado ensimismada.<br>
-   Es decir, que su futuro como cineasta dependa en exceso de su fondo de armario, y que sea incapaz de innovar en nuevas colecciones.” <br>
-   esta crítica se valora su regreso a su estilo más genuino, pero se advierte que podría estar demasiado atrapado en su mejor “época” sin crear algo nuevo.</p></il>
-  <il><p>El medio Periodista Digital (agencia EFE) <br>
-    publicó lo siguiente en 2010, análisis general de Burton:<br>
- “El estadounidense Tim Burton, uno de los directores más creativos del momento, está dispuesto a la ‘sorpresa’….”<br>
- Aquí se elogia su creatividad y la disposición a innovar, aunque se trata de un perfil más que una crítica detallada. </p></il>
-                </ul>
-            </section>
+        <!-- Contenido principal -->
+        
+        <main class="text-white order-2">
+            
+            <section>                    
+                    
+                <h3> Carlos Boyero (crítico de cine, El País) </h3>
 
-        <section id="imagenes">
-            <h2>Galería o imágenes</h2>
-            <img src="ruta-de-tu-imagen.jpg" alt="Descripción de la imagen">
-        </section>
-    </main>
+                <p> Sobre la película Beetlejuice, Beetlejuice: <br>
+                        “Para mí Tim Burton ha hecho dos obras maestras. Tiene una personalidad muy definida, 
+                        pero yo le tenía cierta manía porque era como el icono de los modernos… ‘Ed Wood’ era 
+                        preciosa y ‘Eduardo Manostijeras’ tiene una compasión y piedad maravillosas, aunque otras 
+                        suyas no me gustan.”
+                </p>
+
+                <p>
+                    Aquí Boyero reconoce lo valioso de Burton en sus mejores momentos, pero también expresa que 
+                    no está convencido de su producción más reciente.
+                </p>
+
+                <h3>  Sergi Sánchez (crítico de La Razón) </h3>
+
+                <p>
+                    Sobre la película Beetlejuice, Beetlejuice: <br>
+                    “El auto homenaje … amplía su campo de batalla … La poética de Burton siempre funciona mejor en la 
+                    anécdota que en la continuidad … Lo único que nos hace dudar es que esta súbita revitalización de 
+                    sus esencias sea demasiado ensimismada. Es decir, que su futuro como cineasta dependa en exceso de 
+                    su fondo de armario, y que sea incapaz de innovar en nuevas colecciones.”
+                </p>
+
+                <p>
+                    Esta crítica se valora su regreso a su estilo más genuino, pero se advierte que podría estar demasiado atrapado 
+                    en su mejor “época” sin crear algo nuevo.
+                </p>
+
+                <h3> El medio Periodista Digital (agencia EFE) </h3>
+
+                <p>
+                    Publicó lo siguiente en 2010, análisis general de Burton: <br>
+                    
+                    “El estadounidense Tim Burton, uno de los directores más creativos del momento, está dispuesto a la ‘sorpresa’….”
+                </p>
+                <p>
+                    Aquí se elogia su creatividad y la disposición a innovar, aunque se trata de un perfil más que una crítica detallada.
+                </p>
+
+            </section>
+                
+        </main>
 
         <!-- Pie de página -->
-        <footer>
+        <footer class="order-3 bg-black text-white p-10">
+
             <address>
+            
                 <p> 2025 Mi sitio web. Todos los derechos reservados. </p>
+            
             </address>
+        
         </footer>
     
     </div>
