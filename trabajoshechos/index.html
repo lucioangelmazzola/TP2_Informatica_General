@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi sitio web</title>
-    <!-- Vincular CSS propio -->
-    <link rel="stylesheet" href="styles.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi sitio web</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Vincular CSS propio -->
+  <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
     <!-- Contenedor principal -->
-    <div>
+    <div class="flex flex-col box-sizing bg-[#535355]">
 
-        <header>
-            <h1>Titulo principal</h1>
-            <h2>Sub titulo</h2>
-            <h3>Titulo secundario</h3>
+        <header class="order-1 p-10">
+        
+          <h1>Titulo principal</h1>
+          <h2>Sub titulo</h2>
+          <h3>Titulo secundario</h3>
+        
         </header>
+        
         <!-- Navegación principal -->
-        <nav>
+        
+        <nav class="order-0 flex justify-center bg-black text-white">
+
             <ul>
+        
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../referenciasyfilosofia.html">Filosofia</a></li>
                 <li><a href="../estiloartistico.html">Estilo Artistico</a></li>
-                <li><a href="index.html">Obras</a>
-                    <!-- Submenú -->
+                <li><a href="#">Obras</a>
+          
+                  <!-- Submenú -->
                     <ul>
-                        <li><a href="colaboracionesatim.html">Colaboraciones</a></li>
-                        <li><a href="fragmentosdesusobras.html">Algunos Films</a></li>
+          
+                      <li><a href="colaboracionesatim.html">Colaboraciones</a></li>
+                      <li><a href="fragmentosdesusobras.html">Algunos Films</a></li>
+          
                     </ul>
-                </li>
+          
+                  </li>
                 <li><a href="../opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
                 <li><a href="../alumnos.html">Contacto</a></li>
                 <li><a href="../formulario.html">Formulario</a></li>
@@ -36,157 +51,258 @@
         </nav>
 
     <!-- Contenido principal -->
-    <main>
-        <section id="texto">
-            <h1>TIM BURTON</h1>
-            <h2>Sus Obras</h2>
-            </section>
-            <section>
-               <ul >
+        <main class="text-white order-2">
 
-  <li>
-    <h3>Vincent (1982)</h3>
-    <img src="img/vincent.jpg" alt="Vincent (1982)">
-    <p>Corto de animación en stop motion en blanco y negro que sigue a Vincent Malloy, un niño obsesionado con el actor Vincent Price y el horror gótico. Su imaginación lo lleva a un mundo donde lo real se mezcla con lo macabro.</p>
-  </li>
+          <section id="texto">
 
-  <li>
-    <h3>Frankenweenie (corto) (1984)</h3>
-    <img src="img/frankenweenie-1984.jpg" alt="Frankenweenie corto 1984">
-    <p>Cortometraje live action donde un niño revive a su perro muerto mediante experimentos al estilo Frankenstein. El homenaje a los clásicos de monstruos se combina con ternura y humor oscuro.</p>
-  </li>
+            <h2> Sus Obras </h2>
+          
+          </section>
 
-  <li>
-    <h3>Pee-wee’s Big Adventure (1985)</h3>
-    <img src="img/peewee.jpg" alt="Pee-wee’s Big Adventure">
-    <p>Comedia absurda de aventuras donde Pee-wee Herman viaja por todo el país en busca de su bicicleta robada, encontrando personajes extravagantes y situaciones surrealistas.</p>
-  </li>
+          <section>
+            
+            <ul>
 
-  <li>
-    <h3>Beetlejuice (1988)</h3>
-    <img src="img/beetlejuice.jpg" alt="Beetlejuice 1988">
-    <p>Comedia fantástica donde una pareja de fantasmas contrata a Beetlejuice, un bio-exorcista caótico, para ahuyentar a los vivos de su casa. Mezcla humor negro con estética gótica.</p>
-  </li>
+              <li>
+        
+                <h3>Vincent (1982)</h3>
+        
+                <img src="img/vincent.jpg" alt="Vincent (1982)">
+        
+                <p>Corto de animación en stop motion en blanco y negro que sigue a Vincent Malloy, un niño obsesionado con el actor Vincent Price y el horror gótico. Su imaginación lo lleva a un mundo donde lo real se mezcla con lo macabro.</p>
+        
+              </li>
 
-  <li>
-    <h3>Batman (1989)</h3>
-    <img src="img/batman-1989.jpg" alt="Batman 1989">
-    <p>Versión gótica del héroe de Gotham City, donde Batman enfrenta al Joker. Burton le da un tono sombrío y visualmente estilizado al universo del superhéroe.</p>
-  </li>
+              <li>
+        
+                <h3>Frankenweenie (corto) (1984)</h3>
+        
+                <img src="img/frankenweenie-1984.jpg" alt="Frankenweenie corto 1984">
+        
+                <p>Cortometraje live action donde un niño revive a su perro muerto mediante experimentos al estilo Frankenstein. El homenaje a los clásicos de monstruos se combina con ternura y humor oscuro.</p>
+        
+              </li>
 
-  <li>
-    <h3>Edward Scissorhands (1990)</h3>
-    <img src="img/edward.jpg" alt="Edward Scissorhands 1990">
-    <p>Fantasía gótica sobre Edward, un joven con tijeras en lugar de manos que intenta integrarse en una comunidad suburbana. Una fábula sobre la diferencia, la soledad y la belleza interior.</p>
-  </li>
+              <li>
+        
+                <h3>Pee-wee’s Big Adventure (1985)</h3>
+        
+                <img src="img/peewee.jpg" alt="Pee-wee’s Big Adventure">
+        
+                <p>Comedia absurda de aventuras donde Pee-wee Herman viaja por todo el país en busca de su bicicleta robada, encontrando personajes extravagantes y situaciones surrealistas.</p>
+        
+              </li>
 
-  <li>
-    <h3>Batman Returns (1992)</h3>
-    <img src="img/batman-returns.jpg" alt="Batman Returns 1992">
-    <p>Secuela más oscura y visualmente rica donde Batman se enfrenta al Pingüino y a Catwoman en una Gotham más retorcida y simbólica.</p>
-  </li>
+              <li>
+        
+                <h3>Beetlejuice (1988)</h3>
+        
+                <img src="img/beetlejuice.jpg" alt="Beetlejuice 1988">
+        
+                <p>Comedia fantástica donde una pareja de fantasmas contrata a Beetlejuice, un bio-exorcista caótico, para ahuyentar a los vivos de su casa. Mezcla humor negro con estética gótica.</p>
+        
+              </li>
 
-  <li>
-    <h3>Ed Wood (1994)</h3>
-    <img src="img/edwood.jpg" alt="Ed Wood 1994">
-    <p>Biografía en blanco y negro sobre el director Ed Wood, célebre por sus fracasos. Burton celebra la pasión y el arte imperfecto en una historia sobre la persistencia creativa.</p>
-  </li>
+              <li>
+        
+                <h3>Batman (1989)</h3>
+        
+                <img src="img/batman-1989.jpg" alt="Batman 1989">
+        
+                <p>Versión gótica del héroe de Gotham City, donde Batman enfrenta al Joker. Burton le da un tono sombrío y visualmente estilizado al universo del superhéroe.</p>
+        
+              </li>
 
-  <li>
-    <h3>Mars Attacks! (1996)</h3>
-    <img src="img/marsattacks.jpg" alt="Mars Attacks 1996">
-    <p>Parodia de las películas de invasiones alienígenas donde marcianos caricaturescos atacan la Tierra. Humor absurdo, sátira social y estética retro.</p>
-  </li>
+              <li>
+        
+                <h3>Edward Scissorhands (1990)</h3>
+        
+                <img src="img/edward.jpg" alt="Edward Scissorhands 1990">
+        
+                <p>Fantasía gótica sobre Edward, un joven con tijeras en lugar de manos que intenta integrarse en una comunidad suburbana. Una fábula sobre la diferencia, la soledad y la belleza interior.</p>
+        
+              </li>
 
-  <li>
-    <h3>Sleepy Hollow (1999)</h3>
-    <img src="img/sleepyhollow.jpg" alt="Sleepy Hollow 1999">
-    <p>Adaptación del mito del Jinete sin Cabeza. Un investigador enfrenta lo sobrenatural en un pueblo envuelto en niebla y misterio gótico.</p>
-  </li>
+              <li>
+        
+                <h3>Batman Returns (1992)</h3>
+        
+                <img src="img/batman-returns.jpg" alt="Batman Returns 1992">
+        
+                <p>Secuela más oscura y visualmente rica donde Batman se enfrenta al Pingüino y a Catwoman en una Gotham más retorcida y simbólica.</p>
+        
+              </li>
 
-  <li>
-    <h3>Planet of the Apes (2001)</h3>
-    <img src="img/planetapes.jpg" alt="Planet of the Apes 2001">
-    <p>Reinterpretación del clásico de ciencia ficción donde humanos y simios intercambian roles en un mundo distópico con maquillaje y ambientación impresionantes.</p>
-  </li>
+              <li>
+        
+                <h3>Ed Wood (1994)</h3>
+        
+                <img src="img/edwood.jpg" alt="Ed Wood 1994">
+        
+                <p>Biografía en blanco y negro sobre el director Ed Wood, célebre por sus fracasos. Burton celebra la pasión y el arte imperfecto en una historia sobre la persistencia creativa.</p>
+        
+              </li>
 
-  <li>
-    <h3>Big Fish (2003)</h3>
-    <img src="img/bigfish.jpg" alt="Big Fish 2003">
-    <p>Relato de realismo mágico sobre un hijo que busca la verdad tras las historias fantásticas que contaba su padre. Un viaje entre mito, memoria y amor.</p>
-  </li>
+              <li>
+        
+                <h3>Mars Attacks! (1996)</h3>
+        
+                <img src="img/marsattacks.jpg" alt="Mars Attacks 1996">
+        
+                <p>Parodia de las películas de invasiones alienígenas donde marcianos caricaturescos atacan la Tierra. Humor absurdo, sátira social y estética retro.</p>
+        
+              </li>
 
-  <li>
-    <h3>Charlie and the Chocolate Factory (2005)</h3>
-    <img src="img/charlie.jpg" alt="Charlie and the Chocolate Factory 2005">
-    <p>Adaptación del clásico de Roald Dahl. Charlie visita la mágica fábrica de Willy Wonka, donde la fantasía colorida encierra lecciones morales sobre la humildad y la ambición.</p>
-  </li>
+              <li>
+        
+                <h3>Sleepy Hollow (1999)</h3>
+        
+                <img src="img/sleepyhollow.jpg" alt="Sleepy Hollow 1999">
+        
+                <p>Adaptación del mito del Jinete sin Cabeza. Un investigador enfrenta lo sobrenatural en un pueblo envuelto en niebla y misterio gótico.</p>
+        
+              </li>
 
-  <li>
-    <h3>Corpse Bride (2005)</h3>
-    <img src="img/corpsebride.jpg" alt="Corpse Bride 2005">
-    <p>Animación en stop motion donde un joven accidentalmente se casa con una novia cadáver. Entre el mundo de los vivos y los muertos, surge una historia de amor y redención.</p>
-  </li>
+              <li>
+        
+                <h3>Planet of the Apes (2001)</h3>
+        
+                <img src="img/planetapes.jpg" alt="Planet of the Apes 2001">
+        
+                <p>Reinterpretación del clásico de ciencia ficción donde humanos y simios intercambian roles en un mundo distópico con maquillaje y ambientación impresionantes.</p>
+        
+              </li>
 
-  <li>
-    <h3>Sweeney Todd: The Demon Barber of Fleet Street (2007)</h3>
-    <img src="img/sweeneytodd.jpg" alt="Sweeney Todd 2007">
-    <p>Musical gótico donde un barbero vengativo y su cómplice hornean a sus víctimas. Una historia de venganza, ironía y tragedia con estética teatral.</p>
-  </li>
+              <li>
+        
+                <h3>Big Fish (2003)</h3>
+        
+                <img src="img/bigfish.jpg" alt="Big Fish 2003">
+        
+                <p>Relato de realismo mágico sobre un hijo que busca la verdad tras las historias fantásticas que contaba su padre. Un viaje entre mito, memoria y amor.</p>
+        
+              </li>
 
-  <li>
-    <h3>Alice in Wonderland (2010)</h3>
-    <img src="img/alice.jpg" alt="Alice in Wonderland 2010">
-    <p>Alice regresa al País de las Maravillas en una aventura visualmente onírica. Debe cumplir una profecía y encontrar su identidad entre dos mundos.</p>
-  </li>
+              <li>
+        
+                <h3>Charlie and the Chocolate Factory (2005)</h3>
+        
+                <img src="img/charlie.jpg" alt="Charlie and the Chocolate Factory 2005">
+        
+                <p>Adaptación del clásico de Roald Dahl. Charlie visita la mágica fábrica de Willy Wonka, donde la fantasía colorida encierra lecciones morales sobre la humildad y la ambición.</p>
+        
+              </li>
 
-  <li>
-    <h3>Dark Shadows (2012)</h3>
-    <img src="img/darkshadows.jpg" alt="Dark Shadows 2012">
-    <p>Comedia gótica donde un vampiro del siglo XVIII despierta en los años 70, enfrentando su linaje y una sociedad que ya no entiende.</p>
-  </li>
+              <li>
+        
+                <h3>Corpse Bride (2005)</h3>
+        
+                <img src="img/corpsebride.jpg" alt="Corpse Bride 2005">
+        
+                <p>Animación en stop motion donde un joven accidentalmente se casa con una novia cadáver. Entre el mundo de los vivos y los muertos, surge una historia de amor y redención.</p>
+        
+              </li>
 
-  <li>
-    <h3>Frankenweenie (versión larga) (2012)</h3>
-    <img src="img/frankenweenie2012.jpg" alt="Frankenweenie 2012">
-    <p>Remake animado en stop motion de su propio corto: un niño revive a su perro y debe lidiar con las consecuencias monstruosas del amor y la ciencia.</p>
-  </li>
+              <li>
+        
+                <h3>Sweeney Todd: The Demon Barber of Fleet Street (2007)</h3>
+        
+                <img src="img/sweeneytodd.jpg" alt="Sweeney Todd 2007">
+        
+                <p>Musical gótico donde un barbero vengativo y su cómplice hornean a sus víctimas. Una historia de venganza, ironía y tragedia con estética teatral.</p>
+        
+              </li>
 
-  <li>
-    <h3>Big Eyes (2014)</h3>
-    <img src="img/bigeyes.jpg" alt="Big Eyes 2014">
-    <p>Biografía dramática sobre la pintora Margaret Keane y su lucha por el reconocimiento frente a su esposo manipulador. Una historia sobre identidad y autoría.</p>
-  </li>
+              <li>
+        
+                <h3>Alice in Wonderland (2010)</h3>
+        
+                <img src="img/alice.jpg" alt="Alice in Wonderland 2010">
+        
+                <p>Alice regresa al País de las Maravillas en una aventura visualmente onírica. Debe cumplir una profecía y encontrar su identidad entre dos mundos.</p>
+        
+              </li>
 
-  <li>
-    <h3>Miss Peregrine’s Home for Peculiar Children (2016)</h3>
-    <img src="img/missperegrine.jpg" alt="Miss Peregrine’s Home for Peculiar Children 2016">
-    <p>Fantasía oscura donde un joven descubre un hogar oculto con niños dotados de poderes, enfrentando criaturas que amenazan su existencia.</p>
-  </li>
+              <li>
+        
+                <h3>Dark Shadows (2012)</h3>
+        
+                <img src="img/darkshadows.jpg" alt="Dark Shadows 2012">
+        
+                <p>Comedia gótica donde un vampiro del siglo XVIII despierta en los años 70, enfrentando su linaje y una sociedad que ya no entiende.</p>
+        
+              </li>
 
-  <li>
-    <h3>Dumbo (2019)</h3>
-    <img src="img/dumbo.jpg" alt="Dumbo 2019">
-    <p>Versión en acción real del clásico de Disney. Dumbo, un elefante con orejas enormes, aprende a volar mientras se enfrenta a la codicia y descubre su propio valor.</p>
-  </li>
+              <li>
+        
+                <h3>Frankenweenie (versión larga) (2012)</h3>
+        
+                <img src="img/frankenweenie2012.jpg" alt="Frankenweenie 2012">
+        
+                <p>Remake animado en stop motion de su propio corto: un niño revive a su perro y debe lidiar con las consecuencias monstruosas del amor y la ciencia.</p>
+        
+              </li>
 
-  <li>
-    <h3>Beetlejuice Beetlejuice (2024)</h3>
-    <img src="img/beetlejuice2.jpg" alt="Beetlejuice Beetlejuice 2024">
-    <p>Secuela del clásico de 1988 donde Beetlejuice regresa, desatando de nuevo el caos entre el mundo de los vivos y los muertos con humor y nostalgia.</p>
-  </li>
+              <li>
+        
+                <h3>Big Eyes (2014)</h3>
+        
+                <img src="img/bigeyes.jpg" alt="Big Eyes 2014">
+        
+                <p>Biografía dramática sobre la pintora Margaret Keane y su lucha por el reconocimiento frente a su esposo manipulador. Una historia sobre identidad y autoría.</p>
+        
+              </li>
 
-</ul>
-            </section>
-    </main>
+              <li>
+        
+                <h3>Miss Peregrine’s Home for Peculiar Children (2016)</h3>
+        
+                <img src="img/missperegrine.jpg" alt="Miss Peregrine’s Home for Peculiar Children 2016">
+        
+                <p>Fantasía oscura donde un joven descubre un hogar oculto con niños dotados de poderes, enfrentando criaturas que amenazan su existencia.</p>
+        
+              </li>
 
+              <li>
+        
+                <h3>Dumbo (2019)</h3>
+        
+                <img src="img/dumbo.jpg" alt="Dumbo 2019">
+        
+                <p>Versión en acción real del clásico de Disney. Dumbo, un elefante con orejas enormes, aprende a volar mientras se enfrenta a la codicia y descubre su propio valor.</p>
+        
+              </li>
+
+              <li>
+        
+                <h3>Beetlejuice Beetlejuice (2024)</h3>
+        
+                <img src="img/beetlejuice2.jpg" alt="Beetlejuice Beetlejuice 2024">
+        
+                <p>Secuela del clásico de 1988 donde Beetlejuice regresa, desatando de nuevo el caos entre el mundo de los vivos y los muertos con humor y nostalgia.</p>
+        
+              </li>
+
+            </ul>
+            
+          </section>
+            
+        </main>
+
+        
         <!-- Pie de página -->
-        <footer>
+        
+        <footer class="order-3 bg-black text-white p-10">
+        
             <address>
-                <p> 2025 Mi sitio web. Todos los derechos reservados. </p>
+          
+              <p> 2025 Mi sitio web. Todos los derechos reservados. </p>
+          
             </address>
+        
         </footer>
     
     </div>
+
 </body>
 </html>
