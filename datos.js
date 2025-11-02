@@ -43,13 +43,19 @@ const textos = [
 let indice = 0; 
 
 function cambiarTexto() {
+
   const textoElemento = document.getElementById("texto");
+
   textoElemento.style.opacity = 0; 
+
   setTimeout(() => {
+
     textoElemento.textContent = textos[indice]; 
     textoElemento.style.opacity = 1; 
     indice = (indice + 1) % textos.length; 
+
   }, 300);
+
 }
 
 
