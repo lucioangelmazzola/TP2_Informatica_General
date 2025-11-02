@@ -12,13 +12,11 @@
 
 </head>
 
-<body>
+<body class="p-0 m-0">
+    
     <!-- Contenedor principal -->
+    
     <div class="flex flex-col box-sizing bg-[#535355]">
-
-      <header class="order-1 p-10">
-
-      </header>
 
             <!-- Navegación principal -->
             
@@ -52,88 +50,92 @@
 
             </nav>
 
-            <div class="border-b border-white/10 pb-12">
-            
-              <h2 class="text-base/7 font-semibold text-white">Informacion personal</h2>
-              <p class="mt-1 text-sm/6 text-gray-400">Utilice una dirección permanente donde pueda recibir correo.</p>
+            <!-- 🧾 FORMULARIO -->
+            <main class="flex flex-col items-center justify-center min-h-screen px-6 py-10">
 
-              <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-            
-                <div class="sm:col-span-3">
-            
-                  <label for="first-name" class="block text-sm/6 font-medium text-white">Nombre</label>
-            
-                  <div class="mt-2">
-            
-                    <input id="first-name" type="text" name="first-name" autocomplete="given-name" class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
-            
+              <section class="w-full max-w-4xl bg-[#4a4a4c] rounded-lg shadow-xl p-10">
+              
+                <h2 class="text-2xl font-semibold mb-2 text-orange-200">Información personal</h2>
+                <p class="text-sm text-gray-300 mb-8">Utilice una dirección permanente donde pueda recibir correo.</p>
+
+                <form class="space-y-6">
+              
+                  <!-- Nombre y Apellido -->
+              
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+                    <div>
+              
+                      <label for="nombre" class="block text-sm font-medium mb-1">Nombre</label>
+                      <input id="nombre" name="nombre" type="text" autocomplete="given-name" class="block w-full rounded-md bg-white/10 px-3 py-2 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300" />
+                    
+                    </div>
+
+                    <div>
+    
+                      <label for="apellido" class="block text-sm font-medium mb-1">Apellido</label>
+                      <input id="apellido" name="apellido" type="text" autocomplete="family-name" class="block w-full rounded-md bg-white/10 px-3 py-2 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300" />
+                  
+                    </div>
+                  
                   </div>
-            
-                </div>
 
-                <div class="sm:col-span-3">
-            
-                  <label for="last-name" class="block text-sm/6 font-medium text-white">Apellido</label>
-            
-                  <div class="mt-2">
-            
-                    <input id="last-name" type="text" name="last-name" autocomplete="family-name" class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
-            
+                  <!-- Correo electrónico -->
+                  <div>
+                    
+                    <label for="email" class="block text-sm font-medium mb-1">Correo electrónico</label>
+    
+                    <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md bg-white/10 px-3 py-2 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300" />
+                  
                   </div>
-            
-                </div>
 
-                <div class="sm:col-span-4">
-            
-                  <label for="email" class="block text-sm/6 font-medium text-white">Correo Electronico</label>
-            
-                  <div class="mt-2">
-            
-                    <input id="email" type="email" name="email" autocomplete="email" class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
-            
-                  </div>
-            
-                </div>
-
-                <div class="sm:col-span-3">
-            
-                  <label for="country" class="block text-sm/6 font-medium text-white">Pais</label>
-            
-                  <div class="mt-2 grid grid-cols-1">
-            
-                    <select id="country" name="country" autocomplete="country-name" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white/5 py-1.5 pr-8 pl-3 text-base text-white outline-1 -outline-offset-1 outline-white/10 *:bg-gray-800 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6">
-            
-                      <option>Peru</option>
-            
+                  <!-- País -->
+                  <div>
+                  
+                    <label for="pais" class="block text-sm font-medium mb-1">País</label>
+                  
+                    <select id="pais" name="pais" class="block w-full rounded-md bg-white/10 px-3 py-2 text-white outline-none focus:ring-2 focus:ring-orange-300">
+                      
                       <option>Argentina</option>
-            
-                      <option>Mexico</option>
-            
+                      
+                      <option>Perú</option>
+                      
+                      <option>México</option>
+                      
                       <option>Bolivia</option>
-            
+                      
+                      <option>Chile</option>
+                    
                     </select>
                   
-                  </div> 
+                  </div>
+
+                  <!-- Opinión -->
+                  <div>
+
+                    <label for="opinion" class="block text-sm font-medium mb-1">Opinión sobre el sitio web</label>
                   
-                  <div class="col-span-full"> <!-- Y este div??? -->
-                  <label for="about" class="block text-sm/6 font-medium text-white">Opinion sobre el sitio web</label>
-                  <div class="mt-2">
-                    <textarea id="about" name="about" rows="3" class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6"></textarea>
+                    <textarea id="opinion" name="opinion" rows="4" class="block w-full rounded-md bg-white/10 px-3 py-2 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300"></textarea>
+                  
+                  </div>
+
+                  <!-- Botones -->
+                  <div class="flex justify-end gap-4 pt-4">
+                  
+                    <button type="reset" class="px-4 py-2 rounded-md text-white bg-gray-500 hover:bg-gray-600">Cancelar</button>
+                  
+                    <button type="submit" class="px-4 py-2 rounded-md bg-orange-300 text-black font-semibold hover:bg-orange-400">Guardar y enviar</button>
+                  
                   </div>
                 
-                </div>
-                
-
+                </form>
               
-          </div>
-
-          <div class="mt-6 flex items-center justify-end gap-x-6">
-            <button type="button" class="text-sm/6 font-semibold text-white">Cancelar</button>
-            <button type="submit" class="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Guardar y enviar</button>
-          </div>
-
+              </section>
+            
+            </main>
 
         <!-- Pie de página -->
+    
         <footer class="order-3 bg-black text-white p-10">
 
             <address>
@@ -142,8 +144,9 @@
           
             </address>
         
-          </footer>
+        </footer>
     
     </div>
+
 </body>
 </html>
