@@ -1,27 +1,26 @@
-    .botondato {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 100px;
-      
-    }
+.botondato {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
 
-    #texto {
-      font-size: 1.5em;
-      margin-bottom: 20px;
-      color: #333;
-      transition: opacity 0.3s ease;
-    }
+#texto {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+    transition: opacity 0.3s ease;
+}
 
-    button {
-      background-color: #222;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 1em;
-    }
+button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
 
-    button:hover {
-      background-color: #444;
-    }
+button:hover {
+    background-color: #444;
+}
