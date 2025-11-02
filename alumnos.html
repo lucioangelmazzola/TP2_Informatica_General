@@ -18,36 +18,45 @@
     
     <div class="flex flex-col box-sizing bg-[#535355]">
 
-        <header >
+        <header class="order-1 p-10">
 
         </header>
         
-        <!-- Navegación principal -->
-        
-        <nav class="order-0 flex justify-center bg-black text-white">
+            <!-- Navegación principal -->
+            
+            <nav class="order-0 flex justify-center bg-black text-white">
                 
                 <ul class="flex flex-row p-10 m-2">
+
                     <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="index.html">Inicio</a></li>
                     <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="referenciasyfilosofia.html">Filosofia</a></li>
                     <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="estiloartistico.html">Estilo Artistico</a></li>
-                    <li>
-                        <a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="trabajoshechos/index.html">Obras</a>
+                    
+                    <li class="relative group">
+                    <a href="trabajoshechos/index.html" class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300">Obras</a>                        
+                        
                         <!-- Submenú -->
-                        <ul class="absolute hidden group-hover:block bg-black text-white mt-1 rounded shadow-lg">
-                            <li><a class="block px-4 py-2 hover:bg-orange-300 hover:text-black" href="trabajoshechos/colaboracionesatim.html">Colaboraciones</a></li>
-                            <li><a class="block px-4 py-2 hover:bg-orange-300 hover:text-black" href="trabajoshechos/fragmentosdesusobras.html">Algunos Films</a></li>
+
+                        <ul class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2">
+
+                            <li><a href="trabajoshechos/colaboracionesatim.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
+                            <li><a href="trabajoshechos/fragmentosdesusobras.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Algunos Films</a></li>
+                        
                         </ul>
+
                     </li>
+                    
                     <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
                     <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="alumnos.html">Contacto</a></li>
                     <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="formulario.html">Formulario</a></li>
+
                 </ul>
 
-        </nav>
+            </nav>
 
          <!-- Contenido principal -->
     
-        <main >
+        <main class="text-white order-2">
             
             <section>
             
@@ -64,7 +73,7 @@
 
         <!-- Pie de página -->
         
-        <footer >
+        <footer class="order-3 bg-black text-white p-10">
         
             <address>
         
