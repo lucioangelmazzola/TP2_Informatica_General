@@ -63,3 +63,15 @@ button:hover {
     max-width: 500px;
   }
 }
+.botones-obras {
+  border-top: 1px solid #755896; 
+}
+.footer-btn {
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.footer-btn:hover {
+  transform: scale(1.05);
+}

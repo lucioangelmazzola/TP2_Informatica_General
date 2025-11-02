@@ -35,13 +35,7 @@
                     <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="../estiloartistico.html">Estilo Artistico</a></li>
                     <li class="relative group">
                         <a href="index.html" class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300">Obras</a>
-                        <!-- Submenú -->
-
-                        <ul class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2">
-                            <li><a href="colaboracionesatim.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
-                            <li><a href="fragmentosdesusobras.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Algunos Films</a></li>
-                        </ul>
-
+                        
                     </li>
                     <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="../opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
                     <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="../alumnos.html">Contacto</a></li>
@@ -263,7 +257,7 @@
                 <p>Fantasía oscura donde un joven descubre un hogar oculto con niños dotados de poderes, enfrentando criaturas que amenazan su existencia.</p>
         
               </li>
-
+             
               <li>
         
                 <h3>Dumbo (2019)</h3>
@@ -290,7 +284,26 @@
             
         </main>
 
-        
+        <section class="botones-obras bg-black py-8 text-center">
+  <h2 class="text-orange-200 text-xl font-semibold mb-4">Explorá más obras</h2>
+
+  <div class="flex justify-center gap-6">
+    <button class="footer-btn bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300 transition" 
+            ><a href="colaboracionesatim.html">
+      Colaboraciones</a>
+    </button>
+
+    <button class="footer-btn bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300 transition" 
+            ><a href="fragmentosdesusobras.html">
+      Algunos Films</a>
+    </button>
+  </div>
+</section>
+
+<!-- Sonido al pasar el mouse -->
+<audio id="hoverSound" src="sonidos/risa.mp3" preload="auto"></audio>
+
+<script src="botones-obras.js"></script>
         <!-- Pie de página -->
         
         <footer class="order-3 bg-black text-white p-10">
