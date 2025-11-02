@@ -18,21 +18,31 @@
     
     <div class="flex flex-col box-sizing bg-[#535355]">
 
-            <header class="order-1 p-10">
+        <!-- Encabezado -->
+        <header class="order-1 flex items-start justify-center gap-10 p-10 text-white">
+        
+            <!-- Imagen a la izquierda -->
+            <img src="img/Tim-Burton.jpg" alt="Tim Burton"
+                class="w-[30em] rounded-lg shadow-xl -ml-3">
+            
+            <!-- Texto a la derecha -->
+            <div class="max-w-2xl">
 
-                <h1 class="text-white"> TIM BURTON </h1>
+                <h1 class="text-7xl mb-6">TIM BURTON</h1>
                 
-                <h2 class="text-white"> ¿Quién es Tim Burton? </h2>
+                <h2 class="text-5xl mb-3 mt-10 ">¿Quién es Tim Burton?</h2>
                 
-                <p class="text-white">
-                    Timothy Walter Burton nació el 25 de agosto de 1958 en Burbank, California, Estados Unidos.
-                    Desde muy chico mostró inclinaciones hacia lo artístico: dibujaba, coleccionaba películas clásicas de horror 
-                    y fantasía ademas muchas veces se sentía un poco fuera de lugar respecto de su entorno suburbano. 
-                    Sus películas favoritas desde la infancia fueron aquellas con atmósferas oscuras, 
-                    excéntricas o fantásticas, así como los filmes de monstruos clásicos.
-                </p>
+                <p class="text-justify leading-relaxed mt-20">
+                Timothy Walter Burton nació el 25 de agosto de 1958 en Burbank, California, Estados Unidos.
+                Desde muy chico mostró inclinaciones hacia lo artístico: dibujaba, coleccionaba películas clásicas de horror 
+                y fantasía, además muchas veces se sentía un poco fuera de lugar respecto de su entorno suburbano. 
+                Sus películas favoritas desde la infancia fueron aquellas con atmósferas oscuras, 
+                excéntricas o fantásticas, así como los filmes de monstruos clásicos.</p>
 
-            </header>
+            </div>
+
+        </header>
+
 
             <!-- Navegación principal -->
             
@@ -68,18 +78,20 @@
 
         <!-- Contenido principal -->
         
-        <main class="text-white order-2">
+        <main class="text-white order-2 ml-30">
             
             <!-- Las clases agregadas esta bajo el layout que creamos. -->
             
             <section class="flex flex-col p-10 items-baseline">
             
-                <h2 class="w-40 flex-none pt-2 pb-6"> Breve historia de vida </h2>
+                <h2 class="w-100 flex-none pt-2 pb-6 text-5xl"> Breve historia de vida </h2>
 
                 <p class="w-150 flex-auto pt-2 pb-6"> En su juventud, Burton ingresó al California Institute of the Arts (CalArts), donde se especializó en animación en 
                     el programa de Character Animation. Durante esos años comenzó a producir cortometrajes (como Vincent en 1982) que 
                     ya contenían muchos de los rasgos que luego definirían su obra. Tras sus estudios, Burton trabajó como animador 
                     para Disney, pero pronto su estilo poco convencional chocó con la ortodoxia del estudio. </p>
+                
+                <img >
 
                 <p class="w-150 flex-auto pt-2 pb-6">
                     Su salto al cine comercial fue con Pee-wee 's Big Adventure (1985), una comedia con tintes surrealistas que le abrió 
@@ -87,12 +99,14 @@
                     biográficos, musicales, cine animado y live action, siempre con su sello estético particular. Ha recibido numerosos 
                     reconocimientos, como el León de Oro en el Festival de Venecia (2007) por su carrera, y la Orden de las Artes y 
                     Letras en Francia (2010).</p>
-            
+                
+                <img>
+                
             </section>
  
             <section class="botondato">
 
-                <div id="texto">Haz clic en el botón y decubre algo sobre tim</div>
+                <div id="texto"> Hacé click en el botón y descubri algo sobre Tim Burton </div>
                 <button id="botonCambiar">¿AQUI!</button>
             
             </section>
