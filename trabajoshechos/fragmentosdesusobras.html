@@ -14,34 +14,32 @@
   <div class="flex flex-col min-h-screen">
 
     <!-- Navegación principal -->
-    <nav class="bg-black text-white">
-      <ul
-        class="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-5 p-4 md:p-8 text-sm sm:text-base md:text-lg font-medium">
-        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="../index.html">Inicio</a></li>
-        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
-            href="../referenciasyfilosofia.html">Filosofía</a></li>
-        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
-            href="../estiloartistico.html">Estilo Artístico</a></li>
+     <nav class="order-0 bg-black text-white text-center">
+  <ul class="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 p-4 md:p-8">
+    <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="../index.html">Inicio</a></li>
 
-        <li class="relative group">
-          <a href="index.html" class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300">Obras</a>
-          <ul
-            class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2 w-44">
-            <li><a href="colaboracionesatim.html"
-                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
-            <li><a href="fragmentosdesusobras.html"
-                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-b-lg">Algunos Films</a></li>
-          </ul>
-        </li>
+    <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="../referenciasyfilosofia.html">Filosofía</a></li>
 
-        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
-            href="../opinionesdetim.html">Opiniones</a></li>
-        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
-            href="../alumnos.html">Contacto</a></li>
-        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
-            href="../formulario.html">Formulario</a></li>
+    <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="../estiloartistico.html">Estilo Artístico</a></li>
+
+    <li class="relative group focus-within:z-50">
+      <a href="index.html"
+         class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+         aria-haspopup="true" aria-expanded="false">
+        Obras
+      </a>
+
+      <ul class="hidden group-hover:flex focus-within:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2 w-44 text-sm md:text-base z-50">
+        <li><a href="colaboracionesatim.html"
+               class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
+        <li><a href="fragmentosdesusobras.html"
+               class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-b-lg">Algunos Films</a></li>
       </ul>
-    </nav>
+    </li>
+
+    <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="../opinionesdetim.html">Opiniones</a></li>
+  </ul>
+</nav>
 
     <!-- Contenido principal -->
     <main class="flex-grow bg-gradient-to-b from-[#2d2d2f] to-[#1a1a1b] py-12 px-6 sm:px-10 md:px-16">
@@ -108,9 +106,22 @@
     </main>
 
     <!-- Pie de página -->
-    <footer class="bg-black text-white text-center p-6 mt-10">
-      <p> Sitio web sobre Tim Burton, ¡Disfruten! </p>
-    </footer>
+     <footer class="order-3 bg-black text-white p-10 flex flex-col md:flex-row justify-between items-center">
+  <address>
+    <p class="mb-4 md:mb-0">Sitio web sobre Tim Burton, ¡Disfruten!</p>
+  </address>
+
+  <div class="flex gap-4 mt-4 md:mt-0">
+    <a href="alumnos.html"
+      class="bg-gray-400 text-black px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+      Contacto
+    </a>
+    <a href="formulario.html"
+      class="bg-gray-400 text-black px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+      Formulario
+    </a>
+  </div>
+</footer>
 
   </div>
 
