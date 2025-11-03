@@ -12,12 +12,11 @@
 
 </head>
 
-<body class="p-0">
+<body class="bg-[#535355] text-white">
 
     <!-- Contenedor principal -->
     
-    <div class="flex flex-col box-sizing bg-[#535355]">
-
+    <div class="flex flex-col min-h-screen">
         <header class="order-1 p-10">
 
         </header>
@@ -58,20 +57,39 @@
     
         <main class="text-white order-2">
             
-            <section>
+            <section class="max-w-5xl mx-auto space-y-10">
             
-                <h1>Alumnos</h1>
+                <h1 class="font-[Nitemare] text-4xl sm:text-5xl md:text-6xl mb-6 text-orange-200 drop-shadow-[0_0_10px_#ffb347] text-center">
+            <article class="bg-black/40 border border-orange-200/30 p-6 rounded-2xl shadow-lg backdrop-blur-sm">
+                 <h2 class="text-2xl sm:text-3xl text-orange-300 font-semibold mb-3">Creadores del sitio web</h2>
             
-                <h2>Creadores del sitio web</h2>
-            
-                <p> Este sitio web fue creado por Lucio Mazzola y Juana Roisinblit.<br>
-                Con el fin de hacer un sitio web informativo y educativo sobre Tim Burton</p>
-                <p>Cursamos la materia de Informatica Gneeral 1, en el año 20205 en <br>
+                <p class="text-sm sm:text-base md:text-lg leading-relaxed text-gray-200"> Este sitio web fue creado por Lucio Mazzola y Juana Roisinblit.<br>
+                Con el fin de hacer un sitio web informativo y educativo sobre Tim <br>
+                Cursamos la materia de Informatica Gneeral 1, en el año 20205 en <br>
                     la catedra de <em>Drelichman</em></p>
-                
+                </article>
             
             </section>
-        
+        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+          <!-- 1 -->
+          <li
+            class="bg-[#2b2b2b]/90 rounded-2xl p-5 shadow-lg hover:shadow-orange-300/30 hover:scale-[1.02] transition transform">
+            <h3 class="text-orange-200 text-xl font-semibold mb-3 text-center">Lucio Mazzola</h3>
+            <img src="img/juana.jpeg" alt="juana Roisinblit"
+              class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-md mb-4" />
+            
+          </li>
+
+          <!-- 2 -->
+          <li
+            class="bg-[#2b2b2b]/90 rounded-2xl p-5 shadow-lg hover:shadow-orange-300/30 hover:scale-[1.02] transition transform">
+            <h3 class="text-orange-200 text-xl font-semibold mb-3 text-center">Juana Roisinblit</h3>
+            <img src="img/lucio.jpeg" alt="Frankenweenie corto 1984"
+              class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-md mb-4" />
+            
+          </li>
+          </ul>
         </main>
 
         <!-- Pie de página -->
