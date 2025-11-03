@@ -12,17 +12,11 @@
 
 </head>
 
-<body>
-    <!-- Contenedor principal -->
-    <div class="flex flex-col box-sizing bg-[#535355]">
+<body class="p-0">
 
-        <header class="order-1 p-10">
-        
-          <h1>Titulo principal</h1>
-          <h2>Sub titulo</h2>
-          <h3>Titulo secundario</h3>
-        
-        </header>
+    <!-- Contenedor principal -->
+
+    <div class="flex flex-col box-sizing bg-[#535355]">
         
         <!-- Navegación principal -->
     
@@ -285,25 +279,29 @@
         </main>
 
         <section class="botones-obras bg-black py-8 text-center">
-  <h2 class="text-orange-200 text-xl font-semibold mb-4">Explorá más obras</h2>
 
-  <div class="flex justify-center gap-6">
-    <button class="footer-btn bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300 transition" 
-            ><a href="colaboracionesatim.html">
-      Colaboraciones</a>
-    </button>
+          <h2 class="text-orange-200 text-xl font-semibold mb-4">Explorá más obras</h2>
 
-    <button class="footer-btn bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300 transition" 
-            ><a href="fragmentosdesusobras.html">
-      Algunos Films</a>
-    </button>
-  </div>
-</section>
+          <div class="flex justify-center gap-6">
+            
+            <button class="btn-sonido bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300 transition" 
+                    ><a href="colaboracionesatim.html">
+              Colaboraciones</a>
+            </button>
 
-<!-- Sonido al pasar el mouse -->
-<audio id="clickSound" src="./sonidos/risa.mp3" preload="auto"></audio>
+            <button class="btn-sonido bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300 transition" 
+                    ><a href="fragmentosdesusobras.html"> Algunos Films </a>
 
-<script src="../js/botones-obras.js"></script>
+            </button>
+
+          </div>
+
+        </section>
+
+        <!-- Sonido al pasar el mouse -->
+        <audio id="clickSound" src="../sonidos/risa.mp3" preload="auto"></audio>
+
+
         <!-- Pie de página -->
         
         <footer class="order-3 bg-black text-white p-10">
@@ -318,5 +316,6 @@
     
     </div>
 
+    <script src="../js/botones-obras.js"></script>
 </body>
 </html>
