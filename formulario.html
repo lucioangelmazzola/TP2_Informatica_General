@@ -2,151 +2,127 @@
 <html lang="es">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Formulario </title>
-  <!-- Vincular CSS propio -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="styles.css">
+  <title>Formulario</title>
 
+  <!-- Tailwind -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 
-<body class="p-0 m-0">
-    
-    <!-- Contenedor principal -->
-    
-    <div class="flex flex-col box-sizing bg-[#535355]">
+<body class="bg-[#535355] text-white">
 
-            <!-- Navegación principal -->
-            
-            <nav class="order-0 flex justify-center bg-black text-white">
-                
-                <ul class="flex flex-row p-10 m-2">
+  <!-- Contenedor principal -->
+  <div class="flex flex-col min-h-screen">
 
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="index.html">Inicio</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="referenciasyfilosofia.html">Filosofia</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="estiloartistico.html">Estilo Artistico</a></li>
-                    
-                    <li class="relative group">
-                    <a href="trabajoshechos/index.html" class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300">Obras</a>                        
-                        
-                        <!-- Submenú -->
+    <!-- Navegación principal -->
+    <nav class="order-0 bg-black text-white">
+      <ul
+        class="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-5 p-4 md:p-8 text-sm sm:text-base md:text-lg font-medium">
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="index.html">Inicio</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="referenciasyfilosofia.html">Filosofía</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="estiloartistico.html">Estilo Artístico</a></li>
 
-                        <ul class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2">
+        <li class="relative group">
+          <a href="trabajoshechos/index.html"
+            class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300">Obras</a>
+          <ul
+            class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2 w-40">
+            <li><a href="trabajoshechos/colaboracionesatim.html"
+                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
+            <li><a href="trabajoshechos/fragmentosdesusobras.html"
+                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-b-lg">Algunos Films</a></li>
+          </ul>
+        </li>
 
-                            <li><a href="trabajoshechos/colaboracionesatim.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
-                            <li><a href="trabajoshechos/fragmentosdesusobras.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Algunos Films</a></li>
-                        
-                        </ul>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="opinionesdetim.html">Opiniones</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="alumnos.html">Contacto</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="formulario.html">Formulario</a></li>
+      </ul>
+    </nav>
 
-                    </li>
-                    
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="alumnos.html">Contacto</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="formulario.html">Formulario</a></li>
+    <!-- 🧾 FORMULARIO -->
+    <main
+      class="flex flex-col items-center justify-center flex-grow px-4 sm:px-6 md:px-10 lg:px-16 py-10 bg-gradient-to-b from-[#2d2d2f] to-[#1a1a1b]">
 
-                </ul>
+      <section
+        class="w-full max-w-3xl sm:max-w-4xl bg-[#4a4a4c]/90 backdrop-blur-sm rounded-2xl shadow-2xl p-6 sm:p-10 border border-orange-300/20">
 
-            </nav>
+        <h2 class="text-3xl sm:text-4xl font-[Nitemare] text-orange-200 mb-4 text-center drop-shadow-[0_0_8px_#ffb347]">
+          Información personal
+        </h2>
 
-            <!-- 🧾 FORMULARIO -->
-            <main class="flex flex-col items-center justify-center min-h-screen px-6 py-10">
+        <p class="text-sm sm:text-base text-gray-300 mb-8 text-center">
+          Utilice una dirección permanente donde pueda recibir correo.
+        </p>
 
-              <section class="w-full max-w-4xl bg-[#4a4a4c] rounded-lg shadow-xl p-10">
-              
-                <h2 class="text-2xl font-semibold mb-2 text-orange-200">Información personal</h2>
-                <p class="text-sm text-gray-300 mb-8">Utilice una dirección permanente donde pueda recibir correo.</p>
+        <form class="space-y-6">
 
-                <form class="space-y-6">
-              
-                  <!-- Nombre y Apellido -->
-              
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              
-                    <div>
-              
-                      <label for="nombre" class="block text-sm font-medium mb-1">Nombre</label>
-                      <input id="nombre" name="nombre" type="text" autocomplete="given-name" class="block w-full rounded-md bg-white/10 px-3 py-2 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300" />
-                    
-                    </div>
+          <!-- Nombre y Apellido -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="nombre" class="block text-sm font-medium mb-1">Nombre</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="given-name"
+                class="block w-full rounded-md bg-white/10 px-3 py-2 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300" />
+            </div>
 
-                    <div>
-    
-                      <label for="apellido" class="block text-sm font-medium mb-1">Apellido</label>
-                      <input id="apellido" name="apellido" type="text" autocomplete="family-name" class="block w-full rounded-md bg-white/10 px-3 py-2 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300" />
-                  
-                    </div>
-                  
-                  </div>
+            <div>
+              <label for="apellido" class="block text-sm font-medium mb-1">Apellido</label>
+              <input id="apellido" name="apellido" type="text" autocomplete="family-name"
+                class="block w-full rounded-md bg-white/10 px-3 py-2 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300" />
+            </div>
+          </div>
 
-                  <!-- Correo electrónico -->
-                  <div>
-                    
-                    <label for="email" class="block text-sm font-medium mb-1">Correo electrónico</label>
-    
-                    <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md bg-white/10 px-3 py-2 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300" />
-                  
-                  </div>
+          <!-- Correo electrónico -->
+          <div>
+            <label for="email" class="block text-sm font-medium mb-1">Correo electrónico</label>
+            <input id="email" name="email" type="email" autocomplete="email"
+              class="block w-full rounded-md bg-white/10 px-3 py-2 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300" />
+          </div>
 
-                  <!-- País -->
-                  <div>
-                  
-                    <label for="pais" class="block text-sm font-medium mb-1">País</label>
-                  
-                    <select id="pais" name="pais" class="block w-full rounded-md bg-white/10 px-3 py-2 text-white outline-none focus:ring-2 focus:ring-orange-300">
-                      
-                      <option>Argentina</option>
-                      
-                      <option>Perú</option>
-                      
-                      <option>México</option>
-                      
-                      <option>Bolivia</option>
-                      
-                      <option>Chile</option>
-                    
-                    </select>
-                  
-                  </div>
+          <!-- País -->
+          <div>
+            <label for="pais" class="block text-sm font-medium mb-1">País</label>
+            <select id="pais" name="pais"
+              class="block w-full rounded-md bg-white/10 px-3 py-2 text-white outline-none focus:ring-2 focus:ring-orange-300">
+              <option>Argentina</option>
+              <option>Perú</option>
+              <option>México</option>
+              <option>Bolivia</option>
+              <option>Chile</option>
+            </select>
+          </div>
 
-                  <!-- Opinión -->
-                  <div>
+          <!-- Opinión -->
+          <div>
+            <label for="opinion" class="block text-sm font-medium mb-1">Opinión sobre el sitio web</label>
+            <textarea id="opinion" name="opinion" rows="4"
+              class="block w-full rounded-md bg-white/10 px-3 py-2 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300"></textarea>
+          </div>
 
-                    <label for="opinion" class="block text-sm font-medium mb-1">Opinión sobre el sitio web</label>
-                  
-                    <textarea id="opinion" name="opinion" rows="4" class="block w-full rounded-md bg-white/10 px-3 py-2 text-white placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300"></textarea>
-                  
-                  </div>
+          <!-- Botones -->
+          <div class="flex flex-col sm:flex-row justify-center sm:justify-end gap-4 pt-6">
+            <button type="reset"
+              class="px-4 py-2 rounded-md text-white bg-gray-500 hover:bg-gray-600 transition">Cancelar</button>
+            <button type="submit"
+              class="px-4 py-2 rounded-md bg-orange-300 text-black font-semibold hover:bg-orange-400 transition">Guardar
+              y enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
 
-                  <!-- Botones -->
-                  <div class="flex justify-end gap-4 pt-4">
-                  
-                    <button type="reset" class="px-4 py-2 rounded-md text-white bg-gray-500 hover:bg-gray-600">Cancelar</button>
-                  
-                    <button type="submit" class="px-4 py-2 rounded-md bg-orange-300 text-black font-semibold hover:bg-orange-400">Guardar y enviar</button>
-                  
-                  </div>
-                
-                </form>
-              
-              </section>
-            
-            </main>
+    <!-- Pie de página -->
+    <footer class="order-3 bg-black text-white text-center p-6 mt-10">
+      <p>2025 Mi sitio web. Todos los derechos reservados.</p>
+    </footer>
 
-        <!-- Pie de página -->
-    
-        <footer class="order-3 bg-black text-white p-10">
-
-            <address>
-          
-              <p> 2025 Mi sitio web. Todos los derechos reservados. </p>
-          
-            </address>
-        
-        </footer>
-    
-    </div>
-
+  </div>
 </body>
 </html>

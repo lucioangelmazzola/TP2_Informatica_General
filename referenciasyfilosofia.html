@@ -2,144 +2,126 @@
 <html lang="es">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> La filosofía de Tim Burton </title>
-    <!-- Vincular CSS propio -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="css/estilos.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La filosofía de Tim Burton</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 
-<body>
+<body class="bg-[#535355] text-white">
 
-    <!-- Contenedor principal -->
-    <div class="flex flex-col box-sizing bg-[#535355]">
+  <!-- Contenedor principal -->
+  <div class="flex flex-col min-h-screen">
 
-        <header>
+    <!-- Navegación principal -->
+    <nav class="order-0 bg-black text-white">
+      <ul
+        class="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-5 p-4 md:p-8 text-sm sm:text-base md:text-lg font-medium">
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="index.html">Inicio</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="referenciasyfilosofia.html">Filosofía</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="estiloartistico.html">Estilo Artístico</a></li>
 
-        </header>
-        
-            <!-- Navegación principal -->
-            
-            <nav class="order-0 flex justify-center bg-black text-white">
-                
-                <ul class="flex flex-row p-10 m-2">
+        <li class="relative group">
+          <a href="trabajoshechos/index.html"
+            class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300">Obras</a>
+          <ul
+            class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2 w-40">
+            <li><a href="trabajoshechos/colaboracionesatim.html"
+                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
+            <li><a href="trabajoshechos/fragmentosdesusobras.html"
+                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-b-lg">Algunos Films</a></li>
+          </ul>
+        </li>
 
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="index.html">Inicio</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="referenciasyfilosofia.html">Filosofia</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="estiloartistico.html">Estilo Artistico</a></li>
-                    
-                    <li class="relative group">
-                    <a href="trabajoshechos/index.html" class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300">Obras</a>                        
-                        
-                        <!-- Submenú -->
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="opinionesdetim.html">Opiniones</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="alumnos.html">Contacto</a>
+        </li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="formulario.html">Formulario</a></li>
+      </ul>
+    </nav>
 
-                        <ul class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2">
+    <!-- Contenido principal -->
+    <main class="order-2 flex-grow p-6 sm:p-10 md:p-16 bg-gradient-to-b from-[#2d2d2f] to-[#1a1a1b]">
 
-                            <li><a href="trabajoshechos/colaboracionesatim.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
-                            <li><a href="trabajoshechos/fragmentosdesusobras.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Algunos Films</a></li>
-                        
-                        </ul>
+      <section class="max-w-5xl mx-auto space-y-12">
 
-                    </li>
-                    
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="alumnos.html">Contacto</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="formulario.html">Formulario</a></li>
+        <!-- Título -->
+        <h2
+          class="font-[Nitemare] text-4xl sm:text-5xl md:text-6xl text-center mb-8 text-orange-200 drop-shadow-[0_0_10px_#ffb347]">
+          Su inspiración en el Arte
+        </h2>
 
-                </ul>
+        <!-- Contenedor de texto -->
+        <section
+          class="p-6 sm:p-10 space-y-8 bg-black/40 backdrop-blur-sm rounded-2xl shadow-2xl border border-orange-300/20 text-gray-200 leading-relaxed">
 
-            </nav>
-            
-        <!-- Contenido principal -->
-        <main class="text-white order-2 p-16 bg-gradient-to-b from-[#2d2d2f] to-[#1a1a1b]">
+          <p class="text-base sm:text-lg">
+            Tim Burton no es solo un cineasta: es un creador visual que expresa con imágenes, formas y atmósferas.
+            A lo largo de su obra se revelan varias referencias, influencias y motivaciones constantes:
+          </p>
 
-        <section class="max-w-5xl mx-auto">
+          <p class="text-base sm:text-lg text-[#ffd6a5]">
+            <span class="font-semibold text-orange-300">Influencia del horror clásico y el género gótico.</span><br>
+            Desde joven estuvo fascinado por monstruos, películas de terror clásicas y autores como
+            <em>Edgar Allan Poe</em>. Este gusto se convierte en una fuente constante: casas embrujadas, criaturas fuera
+            de lo común y atmósferas sombrías marcan su sello.
+          </p>
 
-            <h2 class="font-[Nitemare] text-7xl text-center mb-14 text-orange-200 drop-shadow-[0_0_10px_#ffb347]">
-            Su inspiración en el Arte
-            </h2>
-            
-            <section class="p-10 space-y-10 bg-black/40 backdrop-blur-sm rounded-2xl shadow-2xl border border-orange-300/20">
+          <p class="text-base sm:text-lg text-[#c8e1ff]">
+            <span class="font-semibold text-orange-300">Expresionismo alemán / estética distorsionada.</span><br>
+            Muchos de los diseños de Burton se inspiran en el expresionismo alemán: líneas torcidas, ángulos extraños y
+            sombras intensas que reflejan estados emocionales internos.
+          </p>
 
-            <p class="text-lg leading-relaxed text-gray-200">
-                Tim Burton no es solo un cineasta: es un creador visual que expresa con imágenes, formas y atmósferas.
-                A lo largo de su obra se revelan varias referencias, influencias y motivaciones constantes:
-            </p>
-            
-            <p class="text-lg leading-relaxed text-[#ffd6a5]">
-                <span class="font-semibold text-orange-300">Influencia del horror clásico y el género gótico.</span><br>
-                Desde muy joven estuvo fascinado por monstruos, películas de terror clásicas y autores como <em>Edgar Allan Poe</em>.
-                Este gusto se convierte en una de sus fuentes más recurrentes: casas embrujadas, criaturas fuera de lo común,
-                atmósferas sombrías y un interés por lo macabro se vuelven parte de su sello.
-            </p>
-        
-            <p class="text-lg leading-relaxed text-[#c8e1ff]">
-                <span class="font-semibold text-orange-300">Expresionismo alemán / estética distorsionada.</span><br>
-                Muchos de los diseños de Burton se inspiran en el expresionismo alemán: líneas torcidas, ángulos extraños,
-                sombras intensas y decorados deformados que reflejan estados emocionales internos y mundos “rotos”.
-            </p>
-        
-            <p class="text-lg leading-relaxed text-[#e5d6ff]">
-                <span class="font-semibold text-orange-300">El outsider, lo marginal y la identidad diferente.</span><br>
-                Sus historias giran en torno a personajes que no encajan: seres excéntricos, 
-                incomprendidos o marginados. Esa empatía por el “otro” es un motor narrativo
-                central en su obra.
-            </p>
+          <p class="text-base sm:text-lg text-[#e5d6ff]">
+            <span class="font-semibold text-orange-300">El outsider, lo marginal y la identidad diferente.</span><br>
+            Sus historias giran en torno a personajes que no encajan: seres excéntricos e incomprendidos. Esa empatía por
+            el “otro” es un motor narrativo central.
+          </p>
 
-            <p class="text-lg leading-relaxed text-[#ffd6a5]">
-                <span class="font-semibold text-orange-300">Dibujo y bocetos como origen creativo.</span><br>
-                Burton frecuentemente comienza sus proyectos a través del dibujo. Sus bocetos no son meros diseños 
-                sino “portales mentales” hacia sus mundos visuales. En muchas exposiciones, sus ilustraciones
-                preceden a la película misma.
-            </p>
+          <p class="text-base sm:text-lg text-[#ffd6a5]">
+            <span class="font-semibold text-orange-300">Dibujo y bocetos como origen creativo.</span><br>
+            Burton inicia sus proyectos a través del dibujo. Sus bocetos son portales a su imaginación, y muchas veces
+            anteceden la película misma.
+          </p>
 
-            <p class="text-lg leading-relaxed text-[#c8e1ff]">
-                <span class="font-semibold text-orange-300">Fusión de lo fantástico con lo cotidiano / contraste visual.</span><br>
-                Una estrategia clave en su filosofía es insertar lo fantástico dentro de lo mundano:
-                barrios suburbanos, casas comunes, espacios reconocibles “pervertidos” por lo extraño.
-            </p>
+          <p class="text-base sm:text-lg text-[#c8e1ff]">
+            <span class="font-semibold text-orange-300">Fusión de lo fantástico con lo cotidiano.</span><br>
+            Inserta lo fantástico dentro de lo común: barrios suburbanos o casas normales invadidas por lo extraño, para
+            reforzar la emoción y el contraste.
+          </p>
 
-            <p class="text-lg leading-relaxed text-[#e5d6ff]">
-                <span class="font-semibold text-orange-300">Remixing de estilos, homenajes y reinvenciones.</span><br>
-                Burton mezcla géneros —musicales, biográficos, ciencia ficción— con su universo visual,
-                reinterpretando mitos y personajes sin perder su identidad.
-            </p>
-        
-            <p class="text-lg leading-relaxed text-[#ffd6a5]">
-                <span class="font-semibold text-orange-300">El arte como forma de introspección emocional.</span><br>
-                Sus películas exploran temas como el aislamiento, la muerte y la dualidad entre luz y oscuridad.
-                Su estética “melancólica” se convierte en una celebración de lo raro y lo sensible.
-            </p>
-        
-            <p class="text-lg leading-relaxed text-[#ffffff] italic text-center border-t border-orange-300/30 pt-8">
-                En resumen: Burton no hace cine para el género ni para la moda, sino para expresar visiones personales. 
-                Sus películas son paisajes psicológicos donde lo peculiar es manifiesto, donde la estética 
-                habla tan fuerte como los diálogos. Su filosofía creativa parte de la autenticidad, 
-                el homenaje y la transformación visual como lenguaje poético.
-            </p>
+          <p class="text-base sm:text-lg text-[#e5d6ff]">
+            <span class="font-semibold text-orange-300">Remixing de estilos, homenajes y reinvenciones.</span><br>
+            Burton mezcla géneros —musicales, biográficos, ciencia ficción— con su universo visual, reinterpretando mitos
+            y personajes a su manera.
+          </p>
 
-            </section>
+          <p class="text-base sm:text-lg text-[#ffd6a5]">
+            <span class="font-semibold text-orange-300">El arte como introspección emocional.</span><br>
+            Explora el aislamiento, la muerte y la dualidad entre luz y oscuridad. Su estética “melancólica” celebra lo
+            raro y lo sensible.
+          </p>
+
+          <p class="text-sm sm:text-base md:text-lg italic text-center border-t border-orange-300/30 pt-8 text-gray-100">
+            En resumen: Burton no hace cine para el género ni para la moda, sino para expresar visiones personales. 
+            Sus películas son paisajes psicológicos donde lo peculiar y la estética comunican tanto como las palabras.
+          </p>
 
         </section>
+      </section>
+    </main>
 
-        </main>
+    <!-- Pie de página -->
+    <footer class="order-3 bg-black text-white text-center p-6 mt-10">
+      <p>2025 Mi sitio web. Todos los derechos reservados.</p>
+    </footer>
 
-        <!-- Pie de página -->
-   
-        <footer class="order-3 bg-black text-white p-10">
-
-            <address>
-            
-                <p> 2025 Mi sitio web. Todos los derechos reservados. </p>
-            
-            </address>
-        
-        </footer>
-    
-    </div>
-
+  </div>
 </body>
 </html>
