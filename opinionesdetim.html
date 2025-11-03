@@ -2,120 +2,102 @@
 <html lang="es">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criticas y opiniones sobre Tim Burton</title>
-    <!-- Vincular CSS propio -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="styles.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Críticas y Opiniones sobre Tim Burton</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 
-<body class="p-0">
+<body class="bg-[#535355] text-white">
 
-    <!-- Contenedor principal -->
+  <!-- Contenedor principal -->
+  <div class="flex flex-col min-h-screen">
 
-    <div class="flex flex-col box-sizing bg-[#535355]">
+    <!-- Encabezado -->
+    <header class="order-1 text-center md:text-left p-6 md:p-10">
+      <h2 class="font-[Nitemare] text-4xl sm:text-5xl md:text-6xl mb-6 text-orange-200 text-center">Opiniones sobre Tim Burton</h2>
+      <p class="max-w-3xl mx-auto text-sm sm:text-base md:text-lg leading-relaxed text-gray-200">
+        Tim Burton no es solo un cineasta: es un creador visual que expresa con imágenes, formas y atmósferas.
+        A lo largo de su obra se revelan varias referencias, influencias y motivaciones constantes.
+      </p>
+    </header>
 
-        <header class="order-1 p-10">
-            
-            <h2>Opiniones sobre Tim Burton</h2>
-                
-            <p> Tim Burton no es solo un cineasta: es un creador visual que expresa con imágenes, formas y atmósferas.
-            A lo largo de su obra se revelan varias referencias, influencias y motivaciones constantes. </p>
-        
-        </header>
-        
-            <!-- Navegación principal -->
-            
-            <nav class="order-0 flex justify-center bg-black text-white">
-                
-                <ul class="flex flex-row p-10 m-2">
+    <!-- Navegación principal -->
+    <nav class="order-0 bg-black text-white text-center">
+      <ul class="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 p-4 md:p-8">
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="index.html">Inicio</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="referenciasyfilosofia.html">Filosofía</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="estiloartistico.html">Estilo Artístico</a></li>
+        <li class="relative group">
+          <a href="trabajoshechos/index.html" class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300">Obras</a>
+          <ul class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2 w-40 text-sm md:text-base">
+            <li><a href="trabajoshechos/colaboracionesatim.html"
+                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
+            <li><a href="trabajoshechos/fragmentosdesusobras.html"
+                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-b-lg">Algunos Films</a></li>
+          </ul>
+        </li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="opinionesdetim.html">Opiniones</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="alumnos.html">Contacto</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="formulario.html">Formulario</a></li>
+      </ul>
+    </nav>
 
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="index.html">Inicio</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="referenciasyfilosofia.html">Filosofia</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="estiloartistico.html">Estilo Artistico</a></li>
-                    
-                    <li class="relative group">
-                    <a href="trabajoshechos/index.html" class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300">Obras</a>                        
-                        
-                        <!-- Submenú -->
+    <!-- Contenido principal -->
+    <main class="order-2 flex-grow p-6 md:p-10">
+      <section class="space-y-12 max-w-5xl mx-auto">
 
-                        <ul class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2">
+        <article class="bg-black/40 backdrop-blur-sm border border-orange-200/20 p-6 rounded-2xl shadow-lg">
+          <h3 class="text-2xl sm:text-3xl text-orange-300 mb-4 font-semibold">Carlos Boyero (El País)</h3>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed mb-4">
+            Sobre la película <em>Beetlejuice, Beetlejuice</em>:<br>
+            “Para mí Tim Burton ha hecho dos obras maestras. Tiene una personalidad muy definida, 
+            pero yo le tenía cierta manía porque era como el icono de los modernos… <em>Ed Wood</em> era 
+            preciosa y <em>Eduardo Manostijeras</em> tiene una compasión y piedad maravillosas, aunque otras 
+            suyas no me gustan.”
+          </p>
+          <p class="text-gray-200 text-sm sm:text-base md:text-lg italic">
+            Boyero reconoce lo valioso de Burton en sus mejores momentos, pero también expresa reservas con su obra más reciente.
+          </p>
+        </article>
 
-                            <li><a href="trabajoshechos/colaboracionesatim.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
-                            <li><a href="trabajoshechos/fragmentosdesusobras.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Algunos Films</a></li>
-                        
-                        </ul>
+        <article class="bg-black/40 backdrop-blur-sm border border-orange-200/20 p-6 rounded-2xl shadow-lg">
+          <h3 class="text-2xl sm:text-3xl text-orange-300 mb-4 font-semibold">Sergi Sánchez (La Razón)</h3>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed mb-4">
+            Sobre la película <em>Beetlejuice, Beetlejuice</em>:<br>
+            “El auto homenaje … amplía su campo de batalla … La poética de Burton siempre funciona mejor en la 
+            anécdota que en la continuidad … Lo único que nos hace dudar es que esta súbita revitalización de 
+            sus esencias sea demasiado ensimismada. Es decir, que su futuro como cineasta dependa en exceso de 
+            su fondo de armario, y que sea incapaz de innovar en nuevas colecciones.”
+          </p>
+          <p class="text-gray-200 text-sm sm:text-base md:text-lg italic">
+            Aquí se valora su regreso a su estilo más genuino, pero se advierte que podría quedarse atrapado 
+            en su propia estética sin avanzar.
+          </p>
+        </article>
 
-                    </li>
-                    
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="alumnos.html">Contacto</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="formulario.html">Formulario</a></li>
+        <article class="bg-black/40 backdrop-blur-sm border border-orange-200/20 p-6 rounded-2xl shadow-lg">
+          <h3 class="text-2xl sm:text-3xl text-orange-300 mb-4 font-semibold">Agencia EFE (Periodista Digital)</h3>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed mb-4">
+            Publicado en 2010, análisis general de Burton:<br>
+            “El estadounidense Tim Burton, uno de los directores más creativos del momento, está dispuesto a la ‘sorpresa’…”
+          </p>
+          <p class="text-gray-200 text-sm sm:text-base md:text-lg italic">
+            Se elogia su creatividad y su constante disposición a innovar, aunque se trata de una mirada más general que crítica.
+          </p>
+        </article>
 
-                </ul>
+      </section>
+    </main>
 
-            </nav>
+    <!-- Pie de página -->
+    <footer class="order-3 bg-black text-white text-center p-6 mt-10">
+      <p>2025 Mi sitio web. Todos los derechos reservados.</p>
+    </footer>
 
-        <!-- Contenido principal -->
-        
-        <main class="text-white order-2">
-            
-            <section class="flex flex-col p-10 items-baseline">                    
-
-                <h3> Carlos Boyero (crítico de cine, El País) </h3>
-                <p> Sobre la película Beetlejuice, Beetlejuice: <br>
-                        “Para mí Tim Burton ha hecho dos obras maestras. Tiene una personalidad muy definida, 
-                        pero yo le tenía cierta manía porque era como el icono de los modernos… ‘Ed Wood’ era 
-                        preciosa y ‘Eduardo Manostijeras’ tiene una compasión y piedad maravillosas, aunque otras 
-                        suyas no me gustan.”
-                </p>
-                <p>
-                    Aquí Boyero reconoce lo valioso de Burton en sus mejores momentos, pero también expresa que 
-                    no está convencido de su producción más reciente.
-                </p>
-
-                <h3>  Sergi Sánchez (crítico de La Razón) </h3>
-                <p>
-                    Sobre la película Beetlejuice, Beetlejuice: <br>
-                    “El auto homenaje … amplía su campo de batalla … La poética de Burton siempre funciona mejor en la 
-                    anécdota que en la continuidad … Lo único que nos hace dudar es que esta súbita revitalización de 
-                    sus esencias sea demasiado ensimismada. Es decir, que su futuro como cineasta dependa en exceso de 
-                    su fondo de armario, y que sea incapaz de innovar en nuevas colecciones.”
-                </p>
-                <p>
-                    Esta crítica se valora su regreso a su estilo más genuino, pero se advierte que podría estar demasiado atrapado 
-                    en su mejor “época” sin crear algo nuevo.
-                </p>
-
-                <h3> El medio Periodista Digital (agencia EFE) </h3>
-                <p>
-                    Publicó lo siguiente en 2010, análisis general de Burton: <br>
-                    
-                    “El estadounidense Tim Burton, uno de los directores más creativos del momento, está dispuesto a la ‘sorpresa’….”
-                </p>
-                <p>
-                    Aquí se elogia su creatividad y la disposición a innovar, aunque se trata de un perfil más que una crítica detallada.
-                </p>
-
-            </section>
-                
-        </main>
-
-        <!-- Pie de página -->
-         
-        <footer class="order-3 bg-black text-white p-10">
-
-            <address>
-            
-                <p> 2025 Mi sitio web. Todos los derechos reservados. </p>
-            
-            </address>
-        
-        </footer>
-    
-    </div>
+  </div>
 </body>
 </html>

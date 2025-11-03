@@ -2,97 +2,117 @@
 <html lang="es">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> fragmentos de las sobras de Tim </title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Vincular CSS propio -->
-    <link rel="stylesheet" href="../css/estilos.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fragmentos de las obras de Tim</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body>
+<body class="bg-[#535355] text-white">
 
-    <!-- Contenedor principal -->
-    <div class="flex flex-col box-sizing bg-[#535355]">
+  <div class="flex flex-col min-h-screen">
 
-            
+    <!-- Navegación principal -->
+    <nav class="bg-black text-white">
+      <ul
+        class="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-5 p-4 md:p-8 text-sm sm:text-base md:text-lg font-medium">
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="../index.html">Inicio</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="../referenciasyfilosofia.html">Filosofía</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="../estiloartistico.html">Estilo Artístico</a></li>
 
-        <!-- Navegación principal -->
-    
-            <nav class="order-0 flex justify-center bg-black text-white">
-                
-                <ul class="flex flex-row p-10 m-2">
+        <li class="relative group">
+          <a href="index.html" class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300">Obras</a>
+          <ul
+            class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2 w-44">
+            <li><a href="colaboracionesatim.html"
+                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
+            <li><a href="fragmentosdesusobras.html"
+                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-b-lg">Algunos Films</a></li>
+          </ul>
+        </li>
 
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="../index.html">Inicio</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="../referenciasyfilosofia.html">Filosofia</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="../estiloartistico.html">Estilo Artistico</a></li>
-                    <li class="relative group">
-                        <a href="index.html" class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300">Obras</a>
-                        <!-- Submenú -->
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="../opinionesdetim.html">Opiniones</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="../alumnos.html">Contacto</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="../formulario.html">Formulario</a></li>
+      </ul>
+    </nav>
 
-                        <ul class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2">
-                            <li><a href="colaboracionesatim.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
-                            <li><a href="fragmentosdesusobras.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Algunos Films</a></li>
-                        </ul>
+    <!-- Contenido principal -->
+    <main class="flex-grow bg-gradient-to-b from-[#2d2d2f] to-[#1a1a1b] py-12 px-6 sm:px-10 md:px-16">
 
-                    </li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="../opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="../alumnos.html">Contacto</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="../formulario.html">Formulario</a></li>
+      <!-- Título -->
+      <section class="text-center mb-12">
+        <h2
+          class="font-[Nitemare] text-4xl sm:text-5xl md:text-6xl text-orange-200 drop-shadow-[0_0_10px_#ffb347] mb-6">
+          Fragmentos de sus obras
+        </h2>
+        <p class="text-gray-300 text-base sm:text-lg max-w-3xl mx-auto">
+          Una mirada a algunos de los momentos más icónicos del universo cinematográfico de Tim Burton.  
+          Escenas que mezclan lo gótico, lo fantástico y lo poético con su sello visual inconfundible.
+        </p>
+      </section>
 
-                </ul>
+      <!-- Grilla de videos -->
+      <section
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto text-center">
 
-            </nav>
-            
-            <div class="video-section">
-            
-              <div class="video-container">
-                <iframe 
-                  src="https://www.youtube.com/embed/Pka8BJwFxOs" 
-                  title="Video 1"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-                </iframe>
-              </div>
+        <!-- Video 1 -->
+        <div
+          class="bg-[#2b2b2b]/80 border border-orange-300/20 rounded-2xl shadow-2xl hover:shadow-orange-300/20 transition p-4">
+          <iframe
+            class="w-full aspect-video rounded-md"
+            src="https://www.youtube.com/embed/Pka8BJwFxOs"
+            title="Video 1 - Beetlejuice"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <h3 class="text-orange-200 font-semibold text-lg mt-4">Beetlejuice (1988)</h3>
+        </div>
 
-              <div class="video-container">
-                <iframe 
-                  src="https://www.youtube.com/embed/Io0PZTAcBes" 
-                  title="Video 2"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-                </iframe>
-              </div>
+        <!-- Video 2 -->
+        <div
+          class="bg-[#2b2b2b]/80 border border-orange-300/20 rounded-2xl shadow-2xl hover:shadow-orange-300/20 transition p-4">
+          <iframe
+            class="w-full aspect-video rounded-md"
+            src="https://www.youtube.com/embed/Io0PZTAcBes"
+            title="Video 2 - Edward Scissorhands"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <h3 class="text-orange-200 font-semibold text-lg mt-4">Edward Scissorhands (1990)</h3>
+        </div>
 
-              <div class="video-container">
-                <iframe 
-                  src="https://www.youtube.com/embed/SqW6Mrvbf7g" 
-                  title="Video 3"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-                </iframe>
-              </div>
-            
-            </div>
+        <!-- Video 3 -->
+        <div
+          class="bg-[#2b2b2b]/80 border border-orange-300/20 rounded-2xl shadow-2xl hover:shadow-orange-300/20 transition p-4">
+          <iframe
+            class="w-full aspect-video rounded-md"
+            src="https://www.youtube.com/embed/SqW6Mrvbf7g"
+            title="Video 3 - Corpse Bride"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <h3 class="text-orange-200 font-semibold text-lg mt-4">Corpse Bride (2005)</h3>
+        </div>
 
-            <!-- Pie de página -->
-            
-            <footer class="bg-black text-white p-10">
+      </section>
+    </main>
 
-                <address>
-                
-                    <p> 2025 Mi sitio web. Todos los derechos reservados. </p>
-                
-                </address>
-            
-            </footer>
-    
-    </div>
+    <!-- Pie de página -->
+    <footer class="bg-black text-white text-center p-6 mt-10">
+      <p>2025 Mi sitio web. Todos los derechos reservados.</p>
+    </footer>
+
+  </div>
 
 </body>
 </html>

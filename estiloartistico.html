@@ -2,120 +2,144 @@
 <html lang="es">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> El estilo artistico usado por Tim Burton </title>
-    <!-- Vincular CSS propio -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="styles.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El estilo artístico usado por Tim Burton</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 
-<body class="p-0">
+<body class="bg-[#535355] text-white">
+
+  <!-- Contenedor principal -->
+  <div class="flex flex-col min-h-screen">
+
+    <!-- Encabezado -->
+    <header class="order-1 text-center md:text-left p-6 md:p-10">
+      <h1 class="font-[Nitemare] text-4xl sm:text-5xl md:text-6xl mb-6 text-orange-200 drop-shadow-[0_0_10px_#ffb347] text-center">
+        Estilo Artístico de Tim Burton
+      </h1>
+      <p class="max-w-3xl mx-auto text-sm sm:text-base md:text-lg leading-relaxed text-gray-200">
+        El estilo artístico de Tim Burton es tan distintivo que ha llegado a llamarse
+        <strong>“Burtonesque”</strong> o <strong>“burtoniano”</strong>. A continuación se presentan los rasgos más
+        característicos de su universo visual.
+      </p>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="order-0 bg-black text-white text-center">
+      <ul class="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 p-4 md:p-8">
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="index.html">Inicio</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="referenciasyfilosofia.html">Filosofía</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="estiloartistico.html">Estilo Artístico</a></li>
+        <li class="relative group">
+          <a href="trabajoshechos/index.html"
+            class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300">Obras</a>
+          <ul
+            class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2 w-40 text-sm md:text-base">
+            <li><a href="trabajoshechos/colaboracionesatim.html"
+                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
+            <li><a href="trabajoshechos/fragmentosdesusobras.html"
+                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-b-lg">Algunos Films</a></li>
+          </ul>
+        </li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="opinionesdetim.html">Opiniones</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="alumnos.html">Contacto</a>
+        </li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="formulario.html">Formulario</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="order-2 flex-grow p-6 md:p-10">
+      <section class="max-w-5xl mx-auto space-y-10">
+
+        <article class="bg-black/40 border border-orange-200/30 p-6 rounded-2xl shadow-lg backdrop-blur-sm">
+          <h2 class="text-2xl sm:text-3xl text-orange-300 font-semibold mb-3">
+            Paleta oscura, contraste marcado y luz dramática
+          </h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed text-gray-200">
+            Sus filmes emplean paletas de colores sombríos o contrastantes, con tonos rojos, morados y verdes
+            intensos. Las sombras y luces duras realzan la atmósfera gótica y teatral, reforzando la identidad de su
+            universo visual.
+          </p>
+        </article>
+
+        <article class="bg-black/40 border border-orange-200/30 p-6 rounded-2xl shadow-lg backdrop-blur-sm">
+          <h2 class="text-2xl sm:text-3xl text-orange-300 font-semibold mb-3">
+            Escenarios distorsionados y geometrías extrañas
+          </h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed text-gray-200">
+            Los escenarios de Burton desafían la lógica del mundo real: ángulos oblicuos, proporciones imposibles y
+            estructuras irregulares que evocan el expresionismo alemán y el surrealismo gótico.
+          </p>
+        </article>
+
+        <article class="bg-black/40 border border-orange-200/30 p-6 rounded-2xl shadow-lg backdrop-blur-sm">
+          <h2 class="text-2xl sm:text-3xl text-orange-300 font-semibold mb-3">
+            Personajes alargados y líneas sinuosas
+          </h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed text-gray-200">
+            Sus figuras humanas suelen tener extremidades alargadas, rostros angulosos y proporciones distorsionadas.
+            Este trazo estilizado transmite fragilidad, excentricidad y una sensación de lo “no humano”.
+          </p>
+        </article>
+
+        <article class="bg-black/40 border border-orange-200/30 p-6 rounded-2xl shadow-lg backdrop-blur-sm">
+          <h2 class="text-2xl sm:text-3xl text-orange-300 font-semibold mb-3">
+            Contraste entre lo grotesco y lo delicado
+          </h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed text-gray-200">
+            Burton combina belleza y fealdad, dulzura y horror: flores marchitas, niños pálidos en paisajes luminosos o
+            juguetes deformes. Este contraste visual genera una tensión poética única.
+          </p>
+        </article>
+
+        <article class="bg-black/40 border border-orange-200/30 p-6 rounded-2xl shadow-lg backdrop-blur-sm">
+          <h2 class="text-2xl sm:text-3xl text-orange-300 font-semibold mb-3">
+            Stop motion y mezcla de técnicas
+          </h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed text-gray-200">
+            En <em>The Nightmare Before Christmas</em>, <em>Corpse Bride</em> y <em>Frankenweenie</em>, Burton utiliza
+            stop motion para mantener una textura artesanal y tangible, combinándola con efectos digitales y escenografía
+            física.
+          </p>
+        </article>
+
+        <article class="bg-black/40 border border-orange-200/30 p-6 rounded-2xl shadow-lg backdrop-blur-sm">
+          <h2 class="text-2xl sm:text-3xl text-orange-300 font-semibold mb-3">
+            Escenografía simbólica y emocional
+          </h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed text-gray-200">
+            Cada objeto en escena cumple una función emocional: una lámpara torcida o un retrato antiguo pueden reflejar
+            la mente del personaje o el tono interno de la historia. Nada es casual, todo comunica.
+          </p>
+        </article>
+
+        <article class="bg-black/40 border border-orange-200/30 p-6 rounded-2xl shadow-lg backdrop-blur-sm">
+          <h2 class="text-2xl sm:text-3xl text-orange-300 font-semibold mb-3">
+            Belleza en lo raro
+          </h2>
+          <p class="text-sm sm:text-base md:text-lg leading-relaxed text-gray-200">
+            Su estética celebra lo inusual, lo imperfecto y lo marginado. En el mundo burtoniano, lo raro no se esconde:
+            se ilumina, se reivindica y se vuelve arte.
+          </p>
+        </article>
+
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="order-3 bg-black text-white text-center p-6 mt-10">
+
+      <p>2025 Mi sitio web. Todos los derechos reservados.</p>
     
-    <!-- Contenedor principal -->
-    
-    <div class="flex flex-col box-sizing bg-[#535355]">
+    </footer>
 
-        <header>
-
-        </header>
-        
-            <!-- Navegación principal -->
-            
-            <nav class="order-0 flex justify-center bg-black text-white">
-                
-                <ul class="flex flex-row p-10 m-2">
-
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="index.html">Inicio</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="referenciasyfilosofia.html">Filosofia</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="estiloartistico.html">Estilo Artistico</a></li>
-                    
-                    <li class="relative group">
-                    <a href="trabajoshechos/index.html" class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300">Obras</a>                        
-                        
-                        <!-- Submenú -->
-
-                        <ul class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2">
-
-                            <li><a href="trabajoshechos/colaboracionesatim.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
-                            <li><a href="trabajoshechos/fragmentosdesusobras.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Algunos Films</a></li>
-                        
-                        </ul>
-
-                    </li>
-                    
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="alumnos.html">Contacto</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="formulario.html">Formulario</a></li>
-
-                </ul>
-
-            </nav>
-
-        <!-- Contenido principal -->
-        <main>
-
-            <section>
-            
-                <h2>Su inspiracion en el Arte</h2>
-            
-                <p>El estilo artístico de Tim Burton es tan distintivo que ha llegado a llamarse “Burtonesque” o “burtoniano”. <br>
-                A continuación algunos rasgos clave de ese estilo:</p>
-                
-                <p>Paleta oscura, contraste marcado y iluminación dramática<br>
-                Muchos de sus filmes emplean una paleta de colores oscuros,<br>
-                sombríos, o con acentos saturados contrastantes (rojo, morado, verde). <br>
-                Las sombras, las luces duras y la iluminación dirigida realzan la atmósfera gótica o fantástica.</p>
-
-                <p>Diseño de escenarios distorsionados / geometrías extrañas<br>
-                Sus sets no siempre obedecen la lógica del mundo “real”: pueden tener ángulos<br>
-                oblicuos, proporciones exageradas, estructuras asimétricas o irregulares. Esto remite <br>
-                al expresionismo visua</p>
-        
-                <p>Personajes alargados, líneas sinuosas y estilizadas<br>
-                Las figuras humanas o los personajes suelen tener extremidades alargadas,<br>
-                rostros angulosos o estilizados, contornos curvos, cuerpos que parecen más <br>
-                simbólicos que realistas. Este trazo “retorcido” refuerza la sensación de rareza.</p>
-        
-                <p>Contraste entre lo grotesco y lo delicado<br>
-                En muchas escenas coexisten elementos bellos con elementos macabros:<br>
-                flores marchitas en pasillos góticos, niños con rostros pálidos en paisajes<br>
-                luminosos, objetos cotidianos con detalles siniestros. Esa tensión visual<br>
-                es parte esencial de su estilo</p>
-            
-                <p>Animación stop motion y mezcla de técnicas<br>
-                Burton ha retomado el stop motion (que refuerza la sensación de lo artesanal,<br>
-                lo manual, lo imperfecto) en proyectos como The Nightmare Before Christmas, Corpse Bride<br>
-                y Frankenweenie.  También combina live action con efectos visuales digitales, maquetas,<br>
-                animación y CGI, según lo que exige el proyecto.</p>
-            
-                <p>Mise en scène expresiva y simbólica<br>
-                Cada elemento del cuadro (distribución de objetos, encuadres, líneas de fuga) comunica algo<br>        
-                emocional o simbólico. No es decoración neutra: todo contribuye al tono y al sentimiento <br>
-                interno del personaje o la escena.</p>
-        
-                <p>Estética del outsider: belleza en lo raro<br>
-                Su estilo no busca lo “perfecto” ni lo convencional: celebra lo peculiar, lo inquietante,<br>
-                lo marginado. Esa belleza en la rareza es un sello emocional tanto como visual.</p>
-
-            </section>
-        
-        </main>
-
-        <!-- Pie de página -->
-        <footer class="order-3 bg-black text-white p-10">
-
-            <address>
-            
-                <p> 2025 Mi sitio web. Todos los derechos reservados. </p>
-            
-            </address>
-        
-        </footer>
-    
-    </div>
-
+  </div>
 </body>
 </html>
