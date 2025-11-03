@@ -2,144 +2,113 @@
 <html lang="es">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Introducción: Tim Burton </title>
-    <!-- Vincular CSS propio -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="css/estilos.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introducción: Tim Burton</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 
-<body class="p-0">
+<body class="bg-[#535355] text-white">
 
-    <!-- Contenedor principal -->
-    
-    <div class="flex flex-col box-sizing bg-[#535355]">
+  <!-- Contenedor principal -->
+  <div class="flex flex-col min-h-screen">
 
-        <!-- Encabezado -->
-        <header class="order-1 flex items-start justify-center gap-10 p-10 text-white">
-        
-            <!-- Imagen a la izquierda -->
-            <img src="img/Tim-Burton.jpg" alt="Tim Burton"
-                class="w-[30em] rounded-lg shadow-xl -ml-3">
-            
-            <!-- Texto a la derecha -->
-            <div class="max-w-2xl">
+    <!-- Encabezado -->
+    <header
+      class="order-1 flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-10 p-6 md:p-10 text-center md:text-left">
+      
+      <!-- Imagen -->
+      <img src="img/Tim-Burton.jpg" alt="Tim Burton"
+        class="w-60 sm:w-72 md:w-[30em] rounded-lg shadow-xl mb-6 md:mb-0">
 
-                <h1 class="text-7xl mb-6">TIM BURTON</h1>
-                
-                <h2 class="text-5xl mb-3 mt-10 ">¿Quién es Tim Burton?</h2>
-                
-                <p class="text-justify leading-relaxed mt-20">
-                Timothy Walter Burton nació el 25 de agosto de 1958 en Burbank, California, Estados Unidos.
-                Desde muy chico mostró inclinaciones hacia lo artístico: dibujaba, coleccionaba películas clásicas de horror 
-                y fantasía, además muchas veces se sentía un poco fuera de lugar respecto de su entorno suburbano. 
-                Sus películas favoritas desde la infancia fueron aquellas con atmósferas oscuras, 
-                excéntricas o fantásticas, así como los filmes de monstruos clásicos.</p>
+      <!-- Texto -->
+      <div class="max-w-xl md:max-w-2xl">
+        <h1 class="text-4xl sm:text-6xl md:text-7xl mb-6 font-[Nitemare]">TIM BURTON</h1>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl mb-6">¿Quién es Tim Burton?</h2>
+        <p class="text-sm sm:text-base md:text-lg leading-relaxed text-justify">
+          Timothy Walter Burton nació el 25 de agosto de 1958 en Burbank, California, Estados Unidos.
+          Desde muy chico mostró inclinaciones hacia lo artístico: dibujaba, coleccionaba películas clásicas de horror 
+          y fantasía, además muchas veces se sentía un poco fuera de lugar respecto de su entorno suburbano. 
+          Sus películas favoritas desde la infancia fueron aquellas con atmósferas oscuras, excéntricas o fantásticas, 
+          así como los filmes de monstruos clásicos.
+        </p>
+      </div>
+    </header>
 
-            </div>
+    <!-- Navegación principal -->
+    <nav class="order-0 bg-black text-white text-center">
+      <ul class="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 p-4 md:p-8">
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="index.html">Inicio</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="referenciasyfilosofia.html">Filosofía</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="estiloartistico.html">Estilo Artístico</a></li>
+        <li class="relative group">
+          <a href="trabajoshechos/index.html" class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300">Obras</a>
+          <ul
+            class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2 w-40 text-sm md:text-base">
+            <li><a href="trabajoshechos/colaboracionesatim.html"
+                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
+            <li><a href="trabajoshechos/fragmentosdesusobras.html"
+                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-b-lg">Algunos Films</a></li>
+          </ul>
+        </li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="opinionesdetim.html">Opiniones</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="alumnos.html">Contacto</a></li>
+        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
+            href="formulario.html">Formulario</a></li>
+      </ul>
+    </nav>
 
-        </header>
+    <!-- Contenido principal -->
+    <main class="order-2 flex-grow p-6 md:p-10">
 
+      <section class="flex flex-col md:flex-row-reverse items-center justify-center gap-10">
 
-            <!-- Navegación principal -->
-            
-            <nav class="order-0 flex justify-center bg-black text-white">
-                
-                <ul class="flex flex-row p-10 m-2">
+        <!-- Imagen -->
+        <div class="flex-shrink-0">
+          <img src="img/tim_burton_1.jpg" alt="Tim Burton"
+            class="w-72 sm:w-80 md:w-[30em] rounded-lg shadow-2xl object-cover">
+        </div>
 
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="index.html">Inicio</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="referenciasyfilosofia.html">Filosofia</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="estiloartistico.html">Estilo Artistico</a></li>
-                    
-                    <li class="relative group">
-                    <a href="trabajoshechos/index.html" class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300">Obras</a>                        
-                        
-                        <!-- Submenú -->
+        <!-- Texto -->
+        <div class="max-w-xl md:max-w-2xl text-white text-center md:text-left">
+          <h2 class="font-[Nitemare] text-3xl sm:text-4xl md:text-5xl mb-6">Breve historia de vida</h2>
 
-                        <ul class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2">
+          <p class="text-sm sm:text-base md:text-lg text-justify mb-6 leading-relaxed">
+            En su juventud, Burton ingresó al California Institute of the Arts (CalArts), donde se especializó 
+            en animación en el programa de Character Animation. Durante esos años comenzó a producir cortometrajes 
+            (como <em>Vincent</em> en 1982) que ya contenían muchos de los rasgos que luego definirían su obra. 
+            Tras sus estudios, Burton trabajó como animador para Disney, pero pronto su estilo poco convencional 
+            chocó con la ortodoxia del estudio.
+          </p>
 
-                            <li><a href="trabajoshechos/colaboracionesatim.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
-                            <li><a href="trabajoshechos/fragmentosdesusobras.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Algunos Films</a></li>
-                        
-                        </ul>
+          <p class="text-sm sm:text-base md:text-lg text-justify leading-relaxed">
+            Su salto al cine comercial fue con <em>Pee-wee’s Big Adventure</em> (1985), una comedia con tintes 
+            surrealistas que le abrió puertas en Hollywood. A lo largo de su carrera, ha explorado géneros diversos: 
+            fantasía, horror, ciencia ficción, biográficos, musicales, cine animado y live action, siempre con su sello 
+            estético particular. Ha recibido numerosos reconocimientos, como el León de Oro en el Festival de Venecia 
+            (2007) por su carrera, y la Orden de las Artes y Letras en Francia (2010).
+          </p>
+        </div>
+      </section>
 
-                    </li>
-                    
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="opinionesdetim.html">Opiniones sobre Tim Burton</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="alumnos.html">Contacto</a></li>
-                    <li><a class="bg-orange-200 text-black p-2 m-2 rounded hover:bg-orange-300" href="formulario.html">Formulario</a></li>
-
-                </ul>
-
-            </nav>
-
-        <!-- Contenido principal -->
-        
-        <main class="text-white order-2 ml-30">
-            
-            <section class="flex flex-col md:flex-row-reverse items-center justify-center gap-10 p-10">
-
-                <!-- Imagen -->
-                <div class="flex-shrink-0">
-
-                    <img src="img/tim_burton_1.jpg" alt="Tim Burton" 
-                        class="w-[30em] rounded-lg shadow-2xl object-cover">
-                
-                    </div>
-
-            <!-- Texto -->
-                <div class="max-w-2xl text-white -ml-30">
-                
-                    <h2 class="font-[Nitemare] text-5xl mb-6">Breve historia de vida</h2>
-
-                    <p class="text-justify mb-6">
-                    En su juventud, Burton ingresó al California Institute of the Arts (CalArts), donde se especializó 
-                    en animación en el programa de Character Animation. Durante esos años comenzó a producir cortometrajes 
-                    (como <em>Vincent</em> en 1982) que ya contenían muchos de los rasgos que luego definirían su obra. 
-                    Tras sus estudios, Burton trabajó como animador para Disney, pero pronto su estilo poco convencional 
-                    chocó con la ortodoxia del estudio.
-                    </p>
-
-                    <p class="text-justify">
-                    Su salto al cine comercial fue con <em>Pee-wee’s Big Adventure</em> (1985), una comedia con tintes 
-                    surrealistas que le abrió puertas en Hollywood. A lo largo de su carrera, ha explorado géneros diversos: 
-                    fantasía, horror, ciencia ficción, biográficos, musicales, cine animado y live action, siempre con su sello 
-                    estético particular. Ha recibido numerosos reconocimientos, como el León de Oro en el Festival de Venecia 
-                    (2007) por su carrera, y la Orden de las Artes y Letras en Francia (2010).
-                    </p>
-                </div>
-
-            </section>
-
-
- 
-            <section class="botondato">
-
-                <div id="texto"> Hacé click en el botón y descubri algo sobre Tim Burton </div>
-                <button id="botonCambiar">¿AQUI!</button>
-            
-            </section>
-        
+      <!-- Botón dinámico -->
+      <section class="text-center mt-10">
+        <div id="texto" class="mb-4 text-lg">Hacé click en el botón y descubrí algo sobre Tim Burton</div>
+        <button id="botonCambiar"
+          class="bg-orange-200 text-black px-6 py-3 rounded hover:bg-orange-300 transition font-semibold">¿AQUÍ!</button>
+      </section>
     </main>
 
-        <!-- Pie de página -->
-        
-        <footer class="order-3 bg-black text-white p-10">
-        
-            <address>
-        
-                <p> 2025 Mi sitio web. Todos los derechos reservados. </p>
-        
-            </address>
-        
-        </footer>
-    
-    </div>
-    
-    <script src="js/datos.js"></script>
+    <!-- Pie de página -->
+    <footer class="order-3 bg-black text-white text-center p-6 mt-10">
+      <p>2025 Mi sitio web. Todos los derechos reservados.</p>
+    </footer>
+
+  </div>
+
+  <script src="js/datos.js"></script>
 
 </body>
 </html>
