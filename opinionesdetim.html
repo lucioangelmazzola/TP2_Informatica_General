@@ -23,25 +23,46 @@
       </p>
     </header>
 
-    <!-- Navegación principal -->
- <nav class="order-0 bg-black text-white text-center">
-      <ul class="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 p-4 md:p-8">
-        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="index.html">Inicio</a></li>
-        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="referenciasyfilosofia.html">Filosofía</a></li>
-        <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="estiloartistico.html">Estilo Artístico</a></li>
-        <li class="relative group">
-          <a href="trabajoshechos/index.html" class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300">Obras</a>
-          <ul
-            class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2 w-40 text-sm md:text-base">
-            <li><a href="trabajoshechos/colaboracionesatim.html"
-                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
-            <li><a href="trabajoshechos/fragmentosdesusobras.html"
-                class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-b-lg">Algunos Films</a></li>
-          </ul>
-        </li>
-<li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
-            href="opinionesdetim.html">Opiniones</a></li>
-      
+    <!-- 🧭 NAVBAR CON MENÚ HAMBURGUESA -->
+    <nav class="bg-black text-white w-full shadow-lg sticky top-0 z-50">
+
+      <div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+
+        <!-- 🧩 Logo -->
+        <h1 class="text-3xl md:text-4xl font-[Nitemare] text-orange-200 tracking-wider">
+          Tim Burton
+        </h1>
+
+        <!-- ☰ Botón hamburguesa (solo en mobile) -->
+        <button id="menu-btn" class="text-4xl text-orange-200 md:hidden focus:outline-none">
+          ☰
+        </button>
+
+        <!-- 🌐 Menú escritorio -->
+        <ul id="menu" class="hidden md:flex flex-wrap justify-end items-center gap-4 lg:gap-6">
+          <li><a class="bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300 transition" href="index.html">Inicio</a></li>
+          <li><a class="bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300 transition" href="referenciasyfilosofia.html">Filosofía</a></li>
+          <li><a class="bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300 transition" href="estiloartistico.html">Estilo Artístico</a></li>
+
+          <li class="relative group">
+            <a href="trabajoshechos/index.html" class="bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300 transition">Obras</a>
+            <ul class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2 w-44 text-sm md:text-base">
+              <li><a href="trabajoshechos/colaboracionesatim.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
+              <li><a href="trabajoshechos/fragmentosdesusobras.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-b-lg">Algunos Films</a></li>
+            </ul>
+          </li>
+
+          <li><a class="bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300 transition" href="opinionesdetim.html">Opiniones</a></li>
+        </ul>
+      </div>
+
+      <!-- 📱 Menú desplegable (mobile) -->
+      <ul id="menu-mobile" class="hidden flex-col bg-black text-center border-t border-orange-200 md:hidden">
+        <li><a class="block py-3 hover:bg-orange-300 hover:text-black" href="index.html">Inicio</a></li>
+        <li><a class="block py-3 hover:bg-orange-300 hover:text-black" href="referenciasyfilosofia.html">Filosofía</a></li>
+        <li><a class="block py-3 hover:bg-orange-300 hover:text-black" href="estiloartistico.html">Estilo Artístico</a></li>
+        <li><a class="block py-3 hover:bg-orange-300 hover:text-black" href="trabajoshechos/index.html">Obras</a></li>
+        <li><a class="block py-3 hover:bg-orange-300 hover:text-black" href="opinionesdetim.html">Opiniones</a></li>
       </ul>
     </nav>
 
@@ -111,5 +132,6 @@
 </footer>
 
   </div>
+  <script src="js/menuresponsive.js"></script>
 </body>
 </html>

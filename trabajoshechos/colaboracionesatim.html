@@ -13,33 +13,48 @@
 
   <div class="flex flex-col min-h-screen">
 
-    <!-- Navegación principal -->
-     <nav class="order-0 bg-black text-white text-center">
-  <ul class="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 p-4 md:p-8">
-    <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="../index.html">Inicio</a></li>
+    <!-- 🧭 NAVBAR CON MENÚ HAMBURGUESA -->
+    <nav class="bg-black text-white w-full shadow-lg sticky top-0 z-50">
 
-    <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="../referenciasyfilosofia.html">Filosofía</a></li>
+      <div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
 
-    <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="../estiloartistico.html">Estilo Artístico</a></li>
+        <!-- 🧩 Logo -->
+        <h1 class="text-3xl md:text-4xl font-[Nitemare] text-orange-200 tracking-wider">
+          Tim Burton
+        </h1>
 
-    <li class="relative group focus-within:z-50">
-      <a href="index.html"
-         class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300"
-         aria-haspopup="true" aria-expanded="false">
-        Obras
-      </a>
+        <!-- ☰ Botón hamburguesa (solo en mobile) -->
+        <button id="menu-btn" class="text-4xl text-orange-200 md:hidden focus:outline-none">
+          ☰
+        </button>
 
-      <ul class="hidden group-hover:flex focus-within:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2 w-44 text-sm md:text-base z-50">
-        <li><a href="colaboracionesatim.html"
-               class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
-        <li><a href="fragmentosdesusobras.html"
-               class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-b-lg">Algunos Films</a></li>
+        <!-- 🌐 Menú escritorio -->
+        <ul id="menu" class="hidden md:flex flex-wrap justify-end items-center gap-4 lg:gap-6">
+          <li><a class="bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300" href="../index.html">Inicio</a></li>
+          <li><a class="bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300" href="../referenciasyfilosofia.html">Filosofía</a></li>
+          <li><a class="bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300" href="../estiloartistico.html">Estilo Artístico</a></li>
+
+          <li class="relative group">
+            <a href="index.html" class="bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300">Obras</a>
+            <ul class="hidden group-hover:flex flex-col bg-black text-white rounded-lg border border-orange-200 shadow-lg absolute top-full left-0 mt-2 w-44 text-sm md:text-base">
+              <li><a href="colaboracionesatim.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-t-lg">Colaboraciones</a></li>
+              <li><a href="fragmentosdesusobras.html" class="block px-4 py-2 hover:bg-orange-300 hover:text-black rounded-b-lg">Algunos Films</a></li>
+            </ul>
+          </li>
+
+          <li><a class="bg-orange-200 text-black px-4 py-2 rounded hover:bg-orange-300" href="../opinionesdetim.html">Opiniones</a></li>
+        </ul>
+      </div>
+
+      <!-- 📱 Menú desplegable (mobile) -->
+      <ul id="menu-mobile" class="hidden flex-col bg-black text-center border-t border-orange-200 md:hidden">
+        <li><a class="block py-3 hover:bg-orange-300 hover:text-black" href="../index.html">Inicio</a></li>
+        <li><a class="block py-3 hover:bg-orange-300 hover:text-black" href="../referenciasyfilosofia.html">Filosofía</a></li>
+        <li><a class="block py-3 hover:bg-orange-300 hover:text-black" href="../estiloartistico.html">Estilo Artístico</a></li>
+        <li><a class="block py-3 hover:bg-orange-300 hover:text-black" href="index.html">Obras</a></li>
+        <li><a class="block py-3 hover:bg-orange-300 hover:text-black" href="../opinionesdetim.html">Opiniones</a></li>
       </ul>
-    </li>
-
-    <li><a class="bg-orange-200 text-black px-3 py-2 rounded hover:bg-orange-300" href="../opinionesdetim.html">Opiniones</a></li>
-  </ul>
-</nav>
+    </nav>
 
     <!-- Contenido principal -->
     <main
@@ -108,23 +123,23 @@
 
     <!-- Pie de página -->
      <footer class="order-3 bg-black text-white p-10 flex flex-col md:flex-row justify-between items-center">
-  <address>
-    <p class="mb-4 md:mb-0">Sitio web sobre Tim Burton, ¡Disfruten!</p>
-  </address>
+      <address>
+        <p class="mb-4 md:mb-0">Sitio web sobre Tim Burton, ¡Disfruten!</p>
+      </address>
 
-  <div class="flex gap-4 mt-4 md:mt-0">
-    <a href="alumnos.html"
-      class="bg-gray-400 text-black px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
-      Contacto
-    </a>
-    <a href="formulario.html"
-      class="bg-gray-400 text-black px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
-      Formulario
-    </a>
+      <div class="flex gap-4 mt-4 md:mt-0">
+        <a href="../alumnos.html"
+          class="bg-gray-400 text-black px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+          Contacto
+        </a>
+        <a href="../formulario.html"
+          class="bg-gray-400 text-black px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+          Formulario
+        </a>
+      </div>
+    </footer>
+
   </div>
-</footer>
-
-  </div>
-
+  <script src="../js/menuresponsive.js"></script>
 </body>
 </html>
